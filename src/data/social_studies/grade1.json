@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "Community Helpers", "skills": [{ "title": "Who helps in our community?", "skillId": "social-2-community" }, { "title": "Jobs in the community", "skillId": "social-2-community" }, { "title": "Community services", "skillId": "social-2-community" }] },
+  { "section": "B", "title": "Maps & Location", "skills": [{ "title": "Map skills", "skillId": "social-4-geography" }, { "title": "Cardinal directions", "skillId": "social-4-geography" }] },
+  { "section": "C", "title": "American Symbols", "skills": [{ "title": "National symbols", "skillId": "social-2-community" }, { "title": "Holidays and traditions", "skillId": "social-2-community" }] }
+]

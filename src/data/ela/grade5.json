@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "Grammar", "skills": [{ "title": "Verb tenses", "skillId": "ela-3-grammar" }, { "title": "Comma usage", "skillId": "ela-3-grammar" }, { "title": "Active and passive voice", "skillId": "ela-3-grammar" }] },
+  { "section": "B", "title": "Vocabulary", "skills": [{ "title": "Connotation and denotation", "skillId": "ela-3-vocabulary" }, { "title": "Greek and Latin roots", "skillId": "ela-3-vocabulary" }, { "title": "Analogies", "skillId": "ela-3-vocabulary" }] },
+  { "section": "C", "title": "Reading Comprehension", "skills": [{ "title": "Theme and central message", "skillId": "ela-3-reading-comprehension" }, { "title": "Compare texts", "skillId": "ela-3-reading-comprehension" }, { "title": "Text structure", "skillId": "ela-3-reading-comprehension" }] }
+]

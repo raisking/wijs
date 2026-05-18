@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "Communities", "skills": [{ "title": "Types of communities", "skillId": "social-2-community" }, { "title": "Rural, suburban, urban", "skillId": "social-2-community" }] },
+  { "section": "B", "title": "Geography", "skills": [{ "title": "Map skills — latitude & longitude", "skillId": "social-4-geography" }, { "title": "Landforms", "skillId": "social-4-geography" }, { "title": "Natural resources", "skillId": "social-4-geography" }] },
+  { "section": "C", "title": "Economics", "skills": [{ "title": "Producers and consumers", "skillId": "social-2-community" }, { "title": "Supply and demand", "skillId": "social-2-community" }] }
+]

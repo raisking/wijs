@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "Grammar & Usage", "skills": [{ "title": "Subject and predicate", "skillId": "ela-3-grammar" }, { "title": "Compound sentences", "skillId": "ela-3-grammar" }, { "title": "Pronoun agreement", "skillId": "ela-3-grammar" }] },
+  { "section": "B", "title": "Vocabulary", "skills": [{ "title": "Context clues", "skillId": "ela-3-vocabulary" }, { "title": "Figurative language", "skillId": "ela-3-vocabulary" }, { "title": "Multiple-meaning words", "skillId": "ela-3-vocabulary" }] },
+  { "section": "C", "title": "Reading Comprehension", "skills": [{ "title": "Main idea vs. supporting details", "skillId": "ela-3-reading-comprehension" }, { "title": "Point of view", "skillId": "ela-3-reading-comprehension" }, { "title": "Summarize a text", "skillId": "ela-3-reading-comprehension" }] }
+]

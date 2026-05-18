@@ -1,0 +1,6 @@
+[
+  { "section": "A", "title": "Letter Sounds", "skills": [{ "title": "Letter sounds — consonants", "skillId": "ela-k-letters" }, { "title": "Letter sounds — vowels", "skillId": "ela-k-letters" }, { "title": "Match letter to sound", "skillId": "ela-k-letters" }] },
+  { "section": "B", "title": "Sight Words", "skills": [{ "title": "Sight words — set 1", "skillId": "ela-k-sight-words" }, { "title": "Sight words — set 2", "skillId": "ela-k-sight-words" }, { "title": "Read sight words in sentences", "skillId": "ela-k-sight-words" }] },
+  { "section": "C", "title": "Beginning Sounds", "skills": [{ "title": "Identify beginning sounds", "skillId": "ela-k-beginning-sounds" }, { "title": "Match beginning sounds", "skillId": "ela-k-beginning-sounds" }] },
+  { "section": "D", "title": "Rhyming", "skills": [{ "title": "Do the words rhyme?", "skillId": "ela-k-letters" }, { "title": "Complete the rhyme", "skillId": "ela-k-letters" }] }
+]

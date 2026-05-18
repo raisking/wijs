@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "States of Matter", "skills": [{ "title": "Solids, liquids, gases", "skillId": "science-5-states" }, { "title": "Changes of state", "skillId": "science-5-states" }, { "title": "Physical vs. chemical changes", "skillId": "science-5-states" }] },
+  { "section": "B", "title": "Ecosystems", "skills": [{ "title": "Producers, consumers, decomposers", "skillId": "science-1-animals" }, { "title": "Food webs", "skillId": "science-1-animals" }] },
+  { "section": "C", "title": "Earth Science", "skills": [{ "title": "The water cycle", "skillId": "science-5-states" }, { "title": "Rock cycle", "skillId": "science-5-states" }] }
+]

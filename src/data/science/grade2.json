@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "Life Science", "skills": [{ "title": "Life cycles", "skillId": "science-3-plants" }, { "title": "Ecosystems", "skillId": "science-1-animals" }, { "title": "Food chains", "skillId": "science-1-animals" }] },
+  { "section": "B", "title": "Earth Science", "skills": [{ "title": "Landforms and water", "skillId": "science-1-animals" }, { "title": "Natural resources", "skillId": "science-1-animals" }] },
+  { "section": "C", "title": "Physical Science", "skills": [{ "title": "Forces and motion", "skillId": "science-5-states" }, { "title": "Energy forms", "skillId": "science-5-states" }] }
+]

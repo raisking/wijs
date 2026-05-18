@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "Plant Life Cycle", "skills": [{ "title": "Parts of a flower", "skillId": "science-3-plants" }, { "title": "Seed to plant", "skillId": "science-3-plants" }, { "title": "How plants reproduce", "skillId": "science-3-plants" }] },
+  { "section": "B", "title": "Animal Adaptations", "skills": [{ "title": "Adaptations for survival", "skillId": "science-1-animals" }, { "title": "Camouflage and mimicry", "skillId": "science-1-animals" }] },
+  { "section": "C", "title": "Forces", "skills": [{ "title": "Push and pull", "skillId": "science-5-states" }, { "title": "Gravity and friction", "skillId": "science-5-states" }] }
+]

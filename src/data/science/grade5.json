@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "States of Matter", "skills": [{ "title": "Properties of solids, liquids, gases", "skillId": "science-5-states" }, { "title": "Mixtures and solutions", "skillId": "science-5-states" }, { "title": "Chemical reactions", "skillId": "science-5-states" }] },
+  { "section": "B", "title": "Energy", "skills": [{ "title": "Light and sound energy", "skillId": "science-5-states" }, { "title": "Heat transfer", "skillId": "science-5-states" }, { "title": "Electrical energy", "skillId": "science-5-states" }] },
+  { "section": "C", "title": "Earth & Space", "skills": [{ "title": "Earth's layers", "skillId": "science-5-states" }, { "title": "Solar system", "skillId": "science-5-states" }, { "title": "Moon phases", "skillId": "science-5-states" }] }
+]

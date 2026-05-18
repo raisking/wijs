@@ -1,0 +1,63 @@
+{
+  "science-k": [
+    { "section": "A", "title": "Living Things", "skills": [{ "title": "Plants vs. animals", "skillId": "science-1-animals" }, { "title": "Animal body coverings", "skillId": "science-1-animals" }] },
+    { "section": "B", "title": "Earth Science", "skills": [{ "title": "Weather patterns", "skillId": "science-1-animals" }, { "title": "Types of weather", "skillId": "science-1-animals" }] },
+    { "section": "C", "title": "Physical Science", "skills": [{ "title": "Properties of objects", "skillId": "science-1-animals" }, { "title": "Sorting objects", "skillId": "science-1-animals" }] }
+  ],
+  "science-1": [
+    { "section": "A", "title": "Animal Habitats", "skills": [{ "title": "Animal homes and habitats", "skillId": "science-1-animals" }, { "title": "Animals and their needs", "skillId": "science-1-animals" }, { "title": "Land vs. water animals", "skillId": "science-1-animals" }] },
+    { "section": "B", "title": "Plants", "skills": [{ "title": "Parts of a plant", "skillId": "science-3-plants" }, { "title": "What plants need to grow", "skillId": "science-3-plants" }] },
+    { "section": "C", "title": "Earth Science", "skills": [{ "title": "Soil, rock, and water", "skillId": "science-1-animals" }, { "title": "Weather and seasons", "skillId": "science-1-animals" }] }
+  ],
+  "science-2": [
+    { "section": "A", "title": "Life Science", "skills": [{ "title": "Life cycles", "skillId": "science-3-plants" }, { "title": "Ecosystems", "skillId": "science-1-animals" }, { "title": "Food chains", "skillId": "science-1-animals" }] },
+    { "section": "B", "title": "Earth Science", "skills": [{ "title": "Landforms and water", "skillId": "science-1-animals" }, { "title": "Natural resources", "skillId": "science-1-animals" }] },
+    { "section": "C", "title": "Physical Science", "skills": [{ "title": "Forces and motion", "skillId": "science-5-states" }, { "title": "Energy forms", "skillId": "science-5-states" }] }
+  ],
+  "science-3": [
+    { "section": "A", "title": "Plant Life Cycle", "skills": [{ "title": "Parts of a flower", "skillId": "science-3-plants" }, { "title": "Seed to plant", "skillId": "science-3-plants" }, { "title": "How plants reproduce", "skillId": "science-3-plants" }] },
+    { "section": "B", "title": "Animal Adaptations", "skills": [{ "title": "Adaptations for survival", "skillId": "science-1-animals" }, { "title": "Camouflage and mimicry", "skillId": "science-1-animals" }] },
+    { "section": "C", "title": "Forces", "skills": [{ "title": "Push and pull", "skillId": "science-5-states" }, { "title": "Gravity and friction", "skillId": "science-5-states" }] }
+  ],
+  "science-4": [
+    { "section": "A", "title": "States of Matter", "skills": [{ "title": "Solids, liquids, gases", "skillId": "science-5-states" }, { "title": "Changes of state", "skillId": "science-5-states" }, { "title": "Physical vs. chemical changes", "skillId": "science-5-states" }] },
+    { "section": "B", "title": "Ecosystems", "skills": [{ "title": "Producers, consumers, decomposers", "skillId": "science-1-animals" }, { "title": "Food webs", "skillId": "science-1-animals" }] },
+    { "section": "C", "title": "Earth Science", "skills": [{ "title": "The water cycle", "skillId": "science-5-states" }, { "title": "Rock cycle", "skillId": "science-5-states" }] }
+  ],
+  "science-5": [
+    { "section": "A", "title": "States of Matter", "skills": [{ "title": "Properties of solids, liquids, gases", "skillId": "science-5-states" }, { "title": "Mixtures and solutions", "skillId": "science-5-states" }, { "title": "Chemical reactions", "skillId": "science-5-states" }] },
+    { "section": "B", "title": "Energy", "skills": [{ "title": "Light and sound energy", "skillId": "science-5-states" }, { "title": "Heat transfer", "skillId": "science-5-states" }, { "title": "Electrical energy", "skillId": "science-5-states" }] },
+    { "section": "C", "title": "Earth & Space", "skills": [{ "title": "Earth's layers", "skillId": "science-5-states" }, { "title": "Solar system", "skillId": "science-5-states" }, { "title": "Moon phases", "skillId": "science-5-states" }] }
+  ],
+  "science-6": [
+    { "section": "A", "title": "Life Science", "skills": [{ "title": "Cell structure and function", "skillId": "science-6-life" }, { "title": "Photosynthesis and respiration", "skillId": "science-6-life" }, { "title": "Classification of living things", "skillId": "science-6-life" }] },
+    { "section": "B", "title": "Earth Science", "skills": [{ "title": "Plate tectonics", "skillId": "science-6-earth" }, { "title": "Rock and mineral identification", "skillId": "science-6-earth" }, { "title": "Atmosphere and climate", "skillId": "science-6-earth" }] },
+    { "section": "C", "title": "Physical Science", "skills": [{ "title": "Matter and its properties", "skillId": "science-6-physical" }, { "title": "Forces and Newton's laws", "skillId": "science-6-physical" }] }
+  ],
+  "science-7": [
+    { "section": "A", "title": "Life Science", "skills": [{ "title": "Cell division — mitosis and meiosis", "skillId": "science-7-life" }, { "title": "Genetics and heredity", "skillId": "science-7-life" }, { "title": "Evolution and natural selection", "skillId": "science-7-life" }] },
+    { "section": "B", "title": "Earth Science", "skills": [{ "title": "Weather systems", "skillId": "science-7-earth" }, { "title": "Ocean currents", "skillId": "science-7-earth" }, { "title": "Earthquakes and volcanoes", "skillId": "science-7-earth" }] },
+    { "section": "C", "title": "Physical Science", "skills": [{ "title": "Chemical and physical changes", "skillId": "science-7-physical" }, { "title": "Periodic table basics", "skillId": "science-7-physical" }] }
+  ],
+  "science-8": [
+    { "section": "A", "title": "Physical Science", "skills": [{ "title": "Motion and speed", "skillId": "science-8-physical" }, { "title": "Newton's three laws", "skillId": "science-8-physical" }, { "title": "Work, energy, and power", "skillId": "science-8-physical" }] },
+    { "section": "B", "title": "Chemistry Fundamentals", "skills": [{ "title": "Atomic structure", "skillId": "science-8-chemistry" }, { "title": "Elements and compounds", "skillId": "science-8-chemistry" }, { "title": "Chemical bonding basics", "skillId": "science-8-chemistry" }] },
+    { "section": "C", "title": "Earth & Space", "skills": [{ "title": "Universe and galaxies", "skillId": "science-8-earth" }, { "title": "Stars and stellar evolution", "skillId": "science-8-earth" }] }
+  ],
+  "science-9": [
+    { "section": "A", "title": "Biology", "skills": [{ "title": "DNA and protein synthesis", "skillId": "science-9-biology" }, { "title": "Ecosystems and biomes", "skillId": "science-9-biology" }, { "title": "Human body systems", "skillId": "science-9-biology" }] },
+    { "section": "B", "title": "Chemistry", "skills": [{ "title": "Balancing chemical equations", "skillId": "science-9-chemistry" }, { "title": "Acids and bases", "skillId": "science-9-chemistry" }, { "title": "The mole and stoichiometry", "skillId": "science-9-chemistry" }] }
+  ],
+  "science-10": [
+    { "section": "A", "title": "Biology II", "skills": [{ "title": "Cellular respiration", "skillId": "science-10-biology" }, { "title": "Immune system", "skillId": "science-10-biology" }, { "title": "Biotechnology basics", "skillId": "science-10-biology" }] },
+    { "section": "B", "title": "Chemistry II", "skills": [{ "title": "Thermodynamics", "skillId": "science-10-chemistry" }, { "title": "Reaction rates and equilibrium", "skillId": "science-10-chemistry" }, { "title": "Electrochemistry", "skillId": "science-10-chemistry" }] }
+  ],
+  "science-11": [
+    { "section": "A", "title": "Physics", "skills": [{ "title": "Kinematics and projectile motion", "skillId": "science-11-physics" }, { "title": "Circular motion and gravity", "skillId": "science-11-physics" }, { "title": "Waves and sound", "skillId": "science-11-physics" }] },
+    { "section": "B", "title": "Advanced Chemistry", "skills": [{ "title": "Organic chemistry basics", "skillId": "science-11-chemistry" }, { "title": "Nuclear chemistry", "skillId": "science-11-chemistry" }] }
+  ],
+  "science-12": [
+    { "section": "A", "title": "AP Physics / Advanced Physics", "skills": [{ "title": "Electromagnetism", "skillId": "science-12-physics" }, { "title": "Quantum mechanics basics", "skillId": "science-12-physics" }, { "title": "Special relativity", "skillId": "science-12-physics" }] },
+    { "section": "B", "title": "Environmental Science", "skills": [{ "title": "Climate change and global warming", "skillId": "science-12-environment" }, { "title": "Sustainability and renewable energy", "skillId": "science-12-environment" }, { "title": "Biodiversity and conservation", "skillId": "science-12-environment" }] }
+  ]
+}

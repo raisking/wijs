@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "Animal Habitats", "skills": [{ "title": "Animal homes and habitats", "skillId": "science-1-animals" }, { "title": "Animals and their needs", "skillId": "science-1-animals" }, { "title": "Land vs. water animals", "skillId": "science-1-animals" }] },
+  { "section": "B", "title": "Plants", "skills": [{ "title": "Parts of a plant", "skillId": "science-3-plants" }, { "title": "What plants need to grow", "skillId": "science-3-plants" }] },
+  { "section": "C", "title": "Earth Science", "skills": [{ "title": "Soil, rock, and water", "skillId": "science-1-animals" }, { "title": "Weather and seasons", "skillId": "science-1-animals" }] }
+]

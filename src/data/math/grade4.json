@@ -1,0 +1,7 @@
+[
+  { "section": "A", "title": "Multi-Digit Multiplication", "skills": [{ "title": "Multiply 2-digit numbers", "skillId": "math-4-multiplication" }, { "title": "Multiply 3-digit by 1-digit", "skillId": "math-4-multiplication" }, { "title": "Multiply with area models", "skillId": "math-4-multiplication" }, { "title": "Estimate products", "skillId": "math-4-multiplication" }] },
+  { "section": "B", "title": "Division", "skills": [{ "title": "Divide 2-digit by 1-digit", "skillId": "math-4-multiplication" }, { "title": "Divide with remainders", "skillId": "math-4-multiplication" }, { "title": "Division word problems", "skillId": "math-4-multiplication" }] },
+  { "section": "C", "title": "Fractions & Decimals", "skills": [{ "title": "Add and subtract fractions", "skillId": "math-4-fractions" }, { "title": "Mixed numbers", "skillId": "math-4-fractions" }, { "title": "Multiply fractions by whole numbers", "skillId": "math-4-fractions" }, { "title": "Decimals to hundredths", "skillId": "math-4-fractions" }] },
+  { "section": "D", "title": "Geometry", "skills": [{ "title": "Types of angles", "skillId": "math-4-geometry" }, { "title": "Classify triangles", "skillId": "math-4-geometry" }, { "title": "Lines of symmetry", "skillId": "math-4-geometry" }] },
+  { "section": "E", "title": "Measurement & Data", "skills": [{ "title": "Convert units of length", "skillId": "math-4-fractions" }, { "title": "Area and perimeter", "skillId": "math-4-geometry" }, { "title": "Line plots with fractions", "skillId": "math-4-fractions" }] }
+]

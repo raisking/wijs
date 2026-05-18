@@ -1,0 +1,6 @@
+[
+  { "section": "A", "title": "Grammar", "skills": [{ "title": "Adjectives and their uses", "skillId": "ela-3-grammar" }, { "title": "Adverbs — how and when", "skillId": "ela-3-grammar" }, { "title": "Comparative adjectives", "skillId": "ela-3-grammar" }] },
+  { "section": "B", "title": "Vocabulary", "skills": [{ "title": "Synonyms", "skillId": "ela-3-vocabulary" }, { "title": "Antonyms", "skillId": "ela-3-vocabulary" }, { "title": "Prefixes and suffixes", "skillId": "ela-3-vocabulary" }] },
+  { "section": "C", "title": "Reading Comprehension", "skills": [{ "title": "Main idea and details", "skillId": "ela-3-reading-comprehension" }, { "title": "Compare and contrast", "skillId": "ela-3-reading-comprehension" }, { "title": "Cause and effect", "skillId": "ela-3-reading-comprehension" }, { "title": "Author's purpose", "skillId": "ela-3-reading-comprehension" }] },
+  { "section": "D", "title": "Writing", "skills": [{ "title": "Topic sentences", "skillId": "ela-3-grammar" }, { "title": "Supporting details", "skillId": "ela-3-grammar" }, { "title": "Paragraph structure", "skillId": "ela-3-grammar" }] }
+]

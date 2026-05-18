@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "World Geography", "skills": [{ "title": "Continents and countries", "skillId": "social-4-geography" }, { "title": "World climate zones", "skillId": "social-4-geography" }, { "title": "Physical features of continents", "skillId": "social-4-geography" }] },
+  { "section": "B", "title": "World History", "skills": [{ "title": "Ancient civilizations", "skillId": "social-2-community" }, { "title": "Age of exploration", "skillId": "social-2-community" }] },
+  { "section": "C", "title": "Economics & Civics", "skills": [{ "title": "Global trade", "skillId": "social-4-geography" }, { "title": "International organizations", "skillId": "social-2-community" }] }
+]

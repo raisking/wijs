@@ -1,0 +1,7 @@
+[
+  { "section": "A", "title": "Counting to 10", "skills": [{ "title": "Counting review — up to 10", "skillId": "math-k-counting-10" }, { "title": "Count objects to 10", "skillId": "math-k-counting-10" }, { "title": "What number comes next?", "skillId": "math-k-counting-10" }, { "title": "Compare groups: more or fewer", "skillId": "math-k-counting-10" }] },
+  { "section": "B", "title": "Adding & Subtracting to 5", "skills": [{ "title": "Adding to 5", "skillId": "math-k-add-subtract-5" }, { "title": "Subtracting to 5", "skillId": "math-k-add-subtract-5" }, { "title": "Adding with pictures", "skillId": "math-k-add-subtract-5" }, { "title": "Number stories", "skillId": "math-k-add-subtract-5" }] },
+  { "section": "C", "title": "2D Shapes", "skills": [{ "title": "Name 2D shapes", "skillId": "math-k-shapes-2d" }, { "title": "Count sides and corners", "skillId": "math-k-shapes-2d" }, { "title": "Sort shapes by attribute", "skillId": "math-k-shapes-2d" }] },
+  { "section": "D", "title": "Patterns", "skills": [{ "title": "Identify AB patterns", "skillId": "math-k-odd-even" }, { "title": "Extend a pattern", "skillId": "math-k-odd-even" }, { "title": "Create a pattern", "skillId": "math-k-odd-even" }] },
+  { "section": "E", "title": "Ten Frames", "skills": [{ "title": "Count using ten frames", "skillId": "math-k-ten-frames" }, { "title": "Fill the ten frame", "skillId": "math-k-ten-frames" }, { "title": "Compare using ten frames", "skillId": "math-k-ten-frames" }] }
+]

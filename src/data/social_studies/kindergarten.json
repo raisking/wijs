@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "All About Me", "skills": [{ "title": "Feelings and emotions", "skillId": "social-2-community" }, { "title": "Taking turns and sharing", "skillId": "social-2-community" }] },
+  { "section": "B", "title": "Community", "skills": [{ "title": "Community helpers", "skillId": "social-2-community" }, { "title": "Rules and laws", "skillId": "social-2-community" }] },
+  { "section": "C", "title": "Maps & Geography", "skills": [{ "title": "Use a map", "skillId": "social-4-geography" }, { "title": "Land and water", "skillId": "social-4-geography" }] }
+]

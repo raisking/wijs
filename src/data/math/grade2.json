@@ -1,0 +1,7 @@
+[
+  { "section": "A", "title": "Place Value to 1,000", "skills": [{ "title": "Hundreds, tens, and ones", "skillId": "math-2-place-value-100" }, { "title": "Write numbers in words", "skillId": "math-2-place-value-100" }, { "title": "Compare 3-digit numbers", "skillId": "math-2-place-value-100" }, { "title": "Order 3-digit numbers", "skillId": "math-2-place-value-100" }] },
+  { "section": "B", "title": "Addition & Subtraction", "skills": [{ "title": "Add within 100", "skillId": "math-2-add-subtract-100" }, { "title": "Subtract within 100", "skillId": "math-2-add-subtract-100" }, { "title": "Add and subtract word problems", "skillId": "math-2-add-subtract-100" }, { "title": "Add three numbers", "skillId": "math-2-add-subtract-100" }] },
+  { "section": "C", "title": "Time & Money", "skills": [{ "title": "Tell time to the quarter hour", "skillId": "math-2-time-money" }, { "title": "Count coins", "skillId": "math-2-time-money" }, { "title": "Add dollar amounts", "skillId": "math-2-time-money" }] },
+  { "section": "D", "title": "Fractions", "skills": [{ "title": "Equal parts", "skillId": "math-2-time-money" }, { "title": "Halves, thirds, fourths", "skillId": "math-2-time-money" }, { "title": "Identify fractions", "skillId": "math-2-time-money" }] },
+  { "section": "E", "title": "Data & Graphs", "skills": [{ "title": "Read a bar graph", "skillId": "math-2-add-subtract-100" }, { "title": "Make a bar graph", "skillId": "math-2-add-subtract-100" }, { "title": "Read a picture graph", "skillId": "math-2-add-subtract-100" }] }
+]

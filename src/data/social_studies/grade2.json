@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "Community Helpers", "skills": [{ "title": "Community workers and their tools", "skillId": "social-2-community" }, { "title": "Government workers", "skillId": "social-2-community" }, { "title": "Goods and services", "skillId": "social-2-community" }] },
+  { "section": "B", "title": "History", "skills": [{ "title": "Then and now", "skillId": "social-2-community" }, { "title": "Important people in history", "skillId": "social-2-community" }] },
+  { "section": "C", "title": "Geography", "skills": [{ "title": "Continents and oceans", "skillId": "social-4-geography" }, { "title": "Read a map", "skillId": "social-4-geography" }] }
+]

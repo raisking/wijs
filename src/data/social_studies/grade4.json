@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "US Geography", "skills": [{ "title": "Regions of the United States", "skillId": "social-4-geography" }, { "title": "State capitals", "skillId": "social-4-geography" }, { "title": "Rivers and mountains", "skillId": "social-4-geography" }] },
+  { "section": "B", "title": "US History", "skills": [{ "title": "Native American cultures", "skillId": "social-2-community" }, { "title": "Colonial America", "skillId": "social-2-community" }, { "title": "The American Revolution", "skillId": "social-2-community" }] },
+  { "section": "C", "title": "Government", "skills": [{ "title": "Three branches of government", "skillId": "social-2-community" }, { "title": "Rights and responsibilities", "skillId": "social-2-community" }] }
+]

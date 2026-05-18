@@ -1,0 +1,6 @@
+[
+  { "section": "A", "title": "Nouns & Verbs", "skills": [{ "title": "Common and proper nouns", "skillId": "ela-2-grammar" }, { "title": "Action and linking verbs", "skillId": "ela-2-grammar" }, { "title": "Subject-verb agreement", "skillId": "ela-2-grammar" }] },
+  { "section": "B", "title": "Plurals & Possessives", "skills": [{ "title": "Singular and plural nouns", "skillId": "ela-2-plurals" }, { "title": "Irregular plural nouns", "skillId": "ela-2-plurals" }, { "title": "Possessive nouns", "skillId": "ela-2-plurals" }] },
+  { "section": "C", "title": "Reading Stories", "skills": [{ "title": "Identify the main idea", "skillId": "ela-2-reading-basic" }, { "title": "Key details in a story", "skillId": "ela-2-reading-basic" }, { "title": "Character and setting", "skillId": "ela-2-reading-basic" }] },
+  { "section": "D", "title": "Vocabulary", "skills": [{ "title": "Compound words", "skillId": "ela-2-grammar" }, { "title": "Contractions", "skillId": "ela-2-grammar" }, { "title": "Context clues", "skillId": "ela-2-reading-basic" }] }
+]

@@ -1,0 +1,6 @@
+[
+  { "section": "A", "title": "Short Vowel Words", "skills": [{ "title": "Short vowel CVC words", "skillId": "ela-1-cvc-words" }, { "title": "Blend CVC words", "skillId": "ela-1-cvc-words" }, { "title": "Read short vowel sentences", "skillId": "ela-1-cvc-words" }] },
+  { "section": "B", "title": "Word Families", "skills": [{ "title": "-at and -an words", "skillId": "ela-1-word-families" }, { "title": "-ig and -og words", "skillId": "ela-1-word-families" }, { "title": "-ot and -ut words", "skillId": "ela-1-word-families" }] },
+  { "section": "C", "title": "Sentences", "skills": [{ "title": "Build a sentence", "skillId": "ela-1-sentences" }, { "title": "Capitalize the first word", "skillId": "ela-1-sentences" }, { "title": "End punctuation", "skillId": "ela-1-sentences" }] },
+  { "section": "D", "title": "Sight Words", "skills": [{ "title": "Grade 1 sight words — set 1", "skillId": "ela-k-sight-words" }, { "title": "Grade 1 sight words — set 2", "skillId": "ela-k-sight-words" }] }
+]

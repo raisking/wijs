@@ -1,0 +1,5 @@
+[
+  { "section": "A", "title": "Living Things", "skills": [{ "title": "Plants vs. animals", "skillId": "science-1-animals" }, { "title": "Animal body coverings", "skillId": "science-1-animals" }] },
+  { "section": "B", "title": "Earth Science", "skills": [{ "title": "Weather patterns", "skillId": "science-1-animals" }, { "title": "Types of weather", "skillId": "science-1-animals" }] },
+  { "section": "C", "title": "Physical Science", "skills": [{ "title": "Properties of objects", "skillId": "science-1-animals" }, { "title": "Sorting objects", "skillId": "science-1-animals" }] }
+]

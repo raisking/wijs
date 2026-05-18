@@ -1,0 +1,7 @@
+[
+  { "section": "A", "title": "Decimals", "skills": [{ "title": "Multiply decimals", "skillId": "math-5-fractions" }, { "title": "Divide decimals", "skillId": "math-5-fractions" }, { "title": "Rounding decimals", "skillId": "math-5-fractions" }] },
+  { "section": "B", "title": "Fractions", "skills": [{ "title": "Add fractions — unlike denominators", "skillId": "math-5-fractions" }, { "title": "Subtract fractions — unlike denominators", "skillId": "math-5-fractions" }, { "title": "Multiply fractions", "skillId": "math-5-fractions" }, { "title": "Divide fractions", "skillId": "math-5-fractions" }] },
+  { "section": "C", "title": "Expressions & Equations", "skills": [{ "title": "Order of operations", "skillId": "math-5-fractions" }, { "title": "Write numerical expressions", "skillId": "math-5-fractions" }, { "title": "Evaluate expressions", "skillId": "math-5-fractions" }] },
+  { "section": "D", "title": "Geometry & Volume", "skills": [{ "title": "Coordinate plane", "skillId": "math-5-fractions" }, { "title": "Classify quadrilaterals", "skillId": "math-5-fractions" }, { "title": "Volume of rectangular prisms", "skillId": "math-5-fractions" }] },
+  { "section": "E", "title": "Data & Statistics", "skills": [{ "title": "Dot plots and frequency tables", "skillId": "math-5-fractions" }, { "title": "Mean, median, mode", "skillId": "math-5-fractions" }, { "title": "Line graphs", "skillId": "math-5-fractions" }] }
+]
