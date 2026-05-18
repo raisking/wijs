@@ -3516,12 +3516,19 @@ function LearningCatalogScreen({ progress, onGoToSubject }) {
   }, []);
 
   const GRADE_DISPLAY = {
-    k:    { name: 'Kindergarten', badge: 'K'  },
-    '1':  { name: 'First grade',  badge: '1'  },
-    '2':  { name: 'Second grade', badge: '2'  },
-    '3':  { name: 'Third grade',  badge: '3'  },
-    '4':  { name: 'Fourth grade', badge: '4'  },
-    '5':  { name: 'Fifth grade',  badge: '5'  },
+    k:    { name: 'Kindergarten',  badge: 'K'  },
+    '1':  { name: 'First grade',   badge: '1'  },
+    '2':  { name: 'Second grade',  badge: '2'  },
+    '3':  { name: 'Third grade',   badge: '3'  },
+    '4':  { name: 'Fourth grade',  badge: '4'  },
+    '5':  { name: 'Fifth grade',   badge: '5'  },
+    '6':  { name: 'Sixth grade',   badge: '6'  },
+    '7':  { name: 'Seventh grade', badge: '7'  },
+    '8':  { name: 'Eighth grade',  badge: '8'  },
+    '9':  { name: 'Ninth grade',   badge: '9'  },
+    '10': { name: 'Tenth grade',   badge: '10' },
+    '11': { name: 'Eleventh grade',badge: '11' },
+    '12': { name: 'Twelfth grade', badge: '12' },
   };
 
   const subjectTabs = [
@@ -3973,7 +3980,7 @@ function SubjectScreen({ grade, subject, onBack, onSelectSkill, progress, onSele
     }
   };
 
-  const gradeShort = { k: 'K', '1':'1', '2':'2', '3':'3', '4':'4', '5':'5' };
+  const gradeShort = { k: 'K', '1':'1', '2':'2', '3':'3', '4':'4', '5':'5', '6':'6', '7':'7', '8':'8', '9':'9', '10':'10', '11':'11', '12':'12' };
   const gradeFull  = { k: 'Kindergarten', '1':'First grade', '2':'Second grade', '3':'Third grade', '4':'Fourth grade', '5':'Fifth grade', '6':'Sixth grade', '7':'Seventh grade', '8':'Eighth grade', '9':'Ninth grade', '10':'Tenth grade', '11':'Eleventh grade', '12':'Twelfth grade' };
 
   return (
