@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import faqs from './data/faqs.json';
 import mathCatalog from './data/math.json';
+import math9Questions from './data/math/grade9.json';
 import elaCatalog from './data/ela.json';
 import scienceCatalog from './data/science.json';
 import socialCatalog from './data/social_studies.json';
@@ -902,6 +903,12 @@ const SKILLS = {
       { id: 'q7', type: 'mcq', difficulty: 3, prompt: 'A function is increasing when:', options: ['It goes up from left to right','It goes down from left to right','It forms a U shape','It is a horizontal line'], answer: 'It goes up from left to right', hint: 'Increasing means as x increases, y increases.' },
       { id: 'q8', type: 'mcq', difficulty: 3, prompt: 'What is the inverse of f(x) = 3x − 6?', options: ['f⁻¹(x) = (x+6)/3','f⁻¹(x) = (x−6)/3','f⁻¹(x) = 3x + 6','f⁻¹(x) = x/3 − 6'], answer: 'f⁻¹(x) = (x+6)/3', hint: 'Replace f(x) with y, swap x and y, then solve for y.' },
     ],
+  },
+  'math-9-area': {
+    id: 'math-9-area', subject: 'math', grade: '9',
+    title: 'Area', description: 'Calculate area of polygons, circles, and composite figures — including algebraic expressions',
+    explanation: 'Area formulas: Rectangle = l×w | Square = s² | Triangle = ½bh | Parallelogram = bh | Trapezoid = ½(b₁+b₂)h | Circle = πr²',
+    questions: math9Questions.area,
   },
   // ============ MATH — GRADE 10 ============
   'math-10-geometry': {
