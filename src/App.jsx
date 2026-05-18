@@ -904,10 +904,16 @@ const SKILLS = {
       { id: 'q8', type: 'mcq', difficulty: 3, prompt: 'What is the inverse of f(x) = 3x − 6?', options: ['f⁻¹(x) = (x+6)/3','f⁻¹(x) = (x−6)/3','f⁻¹(x) = 3x + 6','f⁻¹(x) = x/3 − 6'], answer: 'f⁻¹(x) = (x+6)/3', hint: 'Replace f(x) with y, swap x and y, then solve for y.' },
     ],
   },
+  'math-9-perimeter': {
+    id: 'math-9-perimeter', subject: 'math', grade: '9',
+    title: 'Perimeter', description: 'Calculate perimeter of polygons and solve algebraic perimeter problems',
+    explanation: 'Perimeter = total distance around a shape. Rectangle: P = 2(l + w) | Square: P = 4s | Triangle: P = a + b + c | Regular polygon: P = n × s',
+    questions: math9Questions.perimeter,
+  },
   'math-9-area': {
     id: 'math-9-area', subject: 'math', grade: '9',
-    title: 'Perimeter and Area', description: 'Calculate perimeter and area of polygons, circles, and composite figures — including algebraic expressions',
-    explanation: 'Perimeter: add all sides. Area formulas: Rectangle = l×w | Square = s² | Triangle = ½bh | Parallelogram = bh | Trapezoid = ½(b₁+b₂)h | Circle = πr²',
+    title: 'Area', description: 'Calculate area of polygons, circles, and composite figures — including algebraic expressions',
+    explanation: 'Area formulas: Rectangle = l×w | Square = s² | Triangle = ½bh | Parallelogram = bh | Trapezoid = ½(b₁+b₂)h | Circle = πr²',
     questions: math9Questions.area,
   },
   // ============ MATH — GRADE 10 ============
