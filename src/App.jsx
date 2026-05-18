@@ -906,8 +906,8 @@ const SKILLS = {
   },
   'math-9-area': {
     id: 'math-9-area', subject: 'math', grade: '9',
-    title: 'Area', description: 'Calculate area of polygons, circles, and composite figures — including algebraic expressions',
-    explanation: 'Area formulas: Rectangle = l×w | Square = s² | Triangle = ½bh | Parallelogram = bh | Trapezoid = ½(b₁+b₂)h | Circle = πr²',
+    title: 'Perimeter and Area', description: 'Calculate perimeter and area of polygons, circles, and composite figures — including algebraic expressions',
+    explanation: 'Perimeter: add all sides. Area formulas: Rectangle = l×w | Square = s² | Triangle = ½bh | Parallelogram = bh | Trapezoid = ½(b₁+b₂)h | Circle = πr²',
     questions: math9Questions.area,
   },
   // ============ MATH — GRADE 10 ============
