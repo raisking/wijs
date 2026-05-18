@@ -4304,7 +4304,7 @@ function SkillScreen({ skill, progress, onBack, onAnswer, onComplete }) {
   const [feedback, setFeedback] = useState(null);
   const [showHint, setShowHint] = useState(false);
   const [sessionStats, setSessionStats] = useState({ correct: 0, total: 0 });
-  const [questionsToAnswer] = useState(5);
+  const [questionsToAnswer] = useState(skill.questions?.length || 20);
   const [elapsed, setElapsed] = useState(0);
   const [smartScore, setSmartScore] = useState(() => Math.round(progress?.mastery || 0));
   const [scoreDelta, setScoreDelta] = useState(null);
