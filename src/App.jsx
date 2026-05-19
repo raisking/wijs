@@ -62,7 +62,7 @@ const SUBJECTS = {
   math:    { label: 'Math',           icon: Calculator,   color: '#525AFF', bg: '#F0FAFF', tagline: 'Numbers, shapes & patterns' },
   ela:     { label: 'ELA',            icon: BookOpen,     color: '#DB2777', bg: '#FDF2F8', tagline: 'Reading, writing & grammar' },
   science: { label: 'Science',        icon: FlaskConical, color: '#4AB5B5', bg: '#F0FDFA', tagline: 'Discover how the world works' },
-  social:  { label: 'Social Studies', icon: Globe2,       color: '#B45309', bg: '#FFFBEB', tagline: 'History, geography & civics' },
+  social:  { label: 'Social Studies', icon: Globe2,       color: '#B45309', bg: '#EEF5EB', tagline: 'History, geography & civics' },
 };
 
 // Skill catalog. Each skill has a curated set of questions across types.
@@ -2509,7 +2509,7 @@ function Header({ user, view, onHome, onLearning, onSignIn, onRoleChange, onPrac
           ))}
           <div style={hStyles.mobileDivider} />
           <button onClick={() => closeMenu(onSignIn)}    style={hStyles.mobileLink}>{isSignedIn ? firstName : 'Sign In'}</button>
-          <button onClick={() => closeMenu(onSubscribe)} style={{ ...hStyles.mobileLink, fontWeight: 700, color: '#525AFF' }}>Membership</button>
+          <button onClick={() => closeMenu(onSubscribe)} style={{ ...hStyles.mobileLink, fontWeight: 700, color: '#3F7D58' }}>Membership</button>
         </nav>
       )}
     </header>
@@ -2557,8 +2557,8 @@ function LoginScreen({ onLogin }) {
           <label style={{ ...styles.fieldLabel, marginTop: 16 }}>I'm a...</label>
           <div style={styles.roleGrid} className="role-grid">
             {[
-              { id: 'student', label: 'Student', icon: GraduationCap, color: '#525AFF' },
-              { id: 'parent',  label: 'Parent',  icon: Heart, color: '#525AFF' },
+              { id: 'student', label: 'Student', icon: GraduationCap, color: '#3F7D58' },
+              { id: 'parent',  label: 'Parent',  icon: Heart, color: '#3F7D58' },
               { id: 'teacher', label: 'Teacher', icon: Users, color: '#6D8BC0' },
               { id: 'admin',   label: 'Admin',   icon: Settings, color: '#475569' },
             ].map(r => {
@@ -2593,10 +2593,10 @@ function LoginScreen({ onLogin }) {
       </div>
 
       <div style={styles.loginBg}>
-        <FloatingShape style={{ top: '10%', left: '8%', background: '#525AFF', size: 80 }} delay={0} />
-        <FloatingShape style={{ top: '20%', right: '12%', background: '#8FD9FB', size: 110 }} delay={1.5} />
-        <FloatingShape style={{ bottom: '15%', left: '15%', background: '#A78BFA', size: 70 }} delay={0.8} />
-        <FloatingShape style={{ bottom: '25%', right: '8%', background: '#6D8BC0', size: 95 }} delay={2.2} />
+        <FloatingShape style={{ top: '10%', left: '8%', background: '#3F7D58', size: 80 }} delay={0} />
+        <FloatingShape style={{ top: '20%', right: '12%', background: '#C5DDBB', size: 110 }} delay={1.5} />
+        <FloatingShape style={{ bottom: '15%', left: '15%', background: '#7FB069', size: 70 }} delay={0.8} />
+        <FloatingShape style={{ bottom: '25%', right: '8%', background: '#C4693A', size: 95 }} delay={2.2} />
       </div>
     </div>
   );
@@ -2656,7 +2656,7 @@ function HomeScreen({ user, stats, progress, onSelectGrade, onDashboard, onSignI
             and track your mastery on every skill.
           </p>
           <div style={styles.heroStats}>
-            <HeroStat value={stats.points} label="Total Points" color="#525AFF" />
+            <HeroStat value={stats.points} label="Total Points" color="#3F7D58" />
             <HeroStat value={`${accuracy}%`} label="Accuracy" color="#059669" />
             <HeroStat value={stats.streak} label="Day Streak" color="#6D8BC0" />
           </div>
@@ -2716,7 +2716,7 @@ function HomeScreen({ user, stats, progress, onSelectGrade, onDashboard, onSignI
       {/* Motivational strip */}
       <section style={styles.motivStrip}>
         <div style={styles.motivItem}>
-          <Trophy size={28} color="#525AFF" />
+          <Trophy size={28} color="#3F7D58" />
           <div>
             <div style={styles.motivLabel}>{BADGES.length} Badges to Earn</div>
             <div style={styles.motivSub}>Unlock by hitting milestones</div>
@@ -2730,7 +2730,7 @@ function HomeScreen({ user, stats, progress, onSelectGrade, onDashboard, onSignI
           </div>
         </div>
         <div style={styles.motivItem}>
-          <Crown size={28} color="#525AFF" />
+          <Crown size={28} color="#3F7D58" />
           <div>
             <div style={styles.motivLabel}>Skill Mastery</div>
             <div style={styles.motivSub}>Reach 85%+ to fully master a skill</div>
@@ -2800,7 +2800,7 @@ function WelcomePopup({ onSignIn, onClose }) {
         animation: 'popupSlideUp 0.45s cubic-bezier(0.34,1.56,0.64,1) both',
       }}>
         {/* decorative top bar */}
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 6, background: 'linear-gradient(90deg, #525AFF, #6D8BC0, #A78BFA)' }} />
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 6, background: 'linear-gradient(90deg, #3F7D58, #7FB069, #C4693A)' }} />
 
         {/* close button */}
         <button
@@ -2834,7 +2834,7 @@ function WelcomePopup({ onSignIn, onClose }) {
             color: '#1a1a2e', lineHeight: 1.15,
           }}>
             Learn at Your Own Pace.<br />
-            <span style={{ color: '#525AFF', fontStyle: 'italic', fontFamily: 'Georgia, serif' }}>
+            <span style={{ color: '#3F7D58', fontStyle: 'italic', fontFamily: FONT_DISPLAY }}>
               Practice Until You Master It.
             </span>
           </h2>
@@ -2871,7 +2871,7 @@ function WelcomePopup({ onSignIn, onClose }) {
           onClick={onSignIn}
           className="popup-trial-btn"
           style={{
-            width: '100%', background: 'linear-gradient(135deg, #525AFF, #6D8BC0)',
+            width: '100%', background: 'linear-gradient(135deg, #3F7D58, #7FB069)',
             color: 'white', border: 'none', borderRadius: 999,
             padding: '16px 24px', fontSize: 17, fontWeight: 900, cursor: 'pointer',
             animation: 'pulseGlow 2.4s ease-in-out infinite, trailBounce 3s ease-in-out infinite',
@@ -2909,67 +2909,67 @@ function RedesignedHomeScreen({ user, stats, progress, accuracy, onSelectGrade, 
   const handleTrial = () => { closePopup(); if (onSignIn) onSignIn(); };
 
   const artS = {
-    page: { background: '#F5FBFF', color: '#1C1215', width: '100%', overflowX: 'hidden' },
-    hero: { background: '#E0F6FE', padding: '72px 0 80px', width: '100%', display: 'flex', justifyContent: 'center' },
+    page: { background: '#F6F4EE', color: '#1C1215', width: '100%', overflowX: 'hidden' },
+    hero: { background: '#FFF4E6', padding: '72px 0 80px', width: '100%', display: 'flex', justifyContent: 'center' },
     heroInner: { maxWidth: 1200, width: '100%', margin: '0 auto', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 56, flexWrap: 'wrap', boxSizing: 'border-box' },
     heroLeft: { maxWidth: 560, flex: '0 1 480px', minWidth: 280 },
-    welcomePill: { display: 'inline-flex', alignItems: 'center', gap: 8, background: '#E0F4FF', color: '#3A41CC', borderRadius: 999, padding: '6px 16px', fontSize: 13, fontWeight: 700, marginBottom: 20 },
+    welcomePill: { display: 'inline-flex', alignItems: 'center', gap: 8, background: '#E8F2E4', color: '#3A5A33', borderRadius: 999, padding: '6px 16px', fontSize: 13, fontWeight: 700, marginBottom: 20 },
     h1: { fontSize: 'clamp(36px, 5vw, 64px)', fontWeight: 900, lineHeight: 1.1, margin: '0 0 8px', color: '#1C1215' },
-    h1em: { fontStyle: 'italic', fontFamily: 'Georgia, serif', color: '#525AFF' },
+    h1em: { fontStyle: 'italic', fontFamily: FONT_DISPLAY, color: '#3F7D58' },
     heroPara: { fontSize: 17, color: '#6B5E55', margin: '16px 0 28px', lineHeight: 1.6 },
-    heroBtn: { background: '#525AFF', color: '#fff', border: 'none', borderRadius: 999, padding: '14px 32px', fontSize: 16, fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 14px rgba(82,90,255,0.32)' },
+    heroBtn: { background: '#3F7D58', color: '#fff', border: 'none', borderRadius: 999, padding: '14px 32px', fontSize: 16, fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 14px rgba(63,125,88,0.32)' },
     tagsRow: { display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 24 },
     tag: { borderRadius: 999, padding: '5px 14px', fontSize: 13, fontWeight: 700 },
     heroVisual: { position: 'relative', flex: '0 1 580px', maxWidth: 620, minWidth: 280, minHeight: 400, display: 'flex', alignItems: 'center', justifyContent: 'center' },
     subjectStack: { width: 300, position: 'relative', userSelect: 'none', zIndex: 2 },
-    avatarRing: { width: 220, height: 220, borderRadius: '50%', background: '#E0F4FF', border: '5px solid #525AFF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 96, position: 'relative', boxShadow: '0 12px 40px rgba(82,90,255,0.18)', flexShrink: 0 },
-    badgePill: { position: 'absolute', bottom: -16, left: '50%', transform: 'translateX(-50%)', background: '#F0FAFF', color: '#3A41CC', borderRadius: 999, padding: '6px 18px', fontSize: 12, fontWeight: 900, letterSpacing: 1, whiteSpace: 'nowrap' },
-    programSec: { background: '#F5FBFF', padding: '64px 24px' },
+    avatarRing: { width: 220, height: 220, borderRadius: '50%', background: '#E8F2E4', border: '5px solid #3F7D58', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 96, position: 'relative', boxShadow: '0 12px 40px rgba(63,125,88,0.18)', flexShrink: 0 },
+    badgePill: { position: 'absolute', bottom: -16, left: '50%', transform: 'translateX(-50%)', background: '#EEF5EB', color: '#3A5A33', borderRadius: 999, padding: '6px 18px', fontSize: 12, fontWeight: 900, letterSpacing: 1, whiteSpace: 'nowrap' },
+    programSec: { background: '#F6F4EE', padding: '64px 24px' },
     secWrap: { maxWidth: 1100, margin: '0 auto' },
-    secLabel: { fontSize: 12, fontWeight: 900, letterSpacing: 1.5, textTransform: 'uppercase', color: '#525AFF', marginBottom: 8 },
+    secLabel: { fontSize: 12, fontWeight: 900, letterSpacing: 1.5, textTransform: 'uppercase', color: '#3F7D58', marginBottom: 8 },
     secTitle: { fontSize: 'clamp(26px, 3.5vw, 40px)', fontWeight: 900, margin: '0 0 8px', color: '#1C1215' },
-    secEm: { fontStyle: 'italic', fontFamily: 'Georgia, serif', color: '#525AFF' },
+    secEm: { fontStyle: 'italic', fontFamily: FONT_DISPLAY, color: '#3F7D58' },
     secDesc: { fontSize: 16, color: '#6B5E55', margin: '0 0 40px', maxWidth: 560 },
     cardsGrid: { display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 },
     card: { borderRadius: 20, padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: 16, position: 'relative', overflow: 'hidden', cursor: 'pointer', border: 'none', textAlign: 'left', minHeight: 240 },
     cardGradeTag: { display: 'inline-block', background: 'rgba(255,255,255,0.55)', borderRadius: 999, padding: '4px 12px', fontSize: 12, fontWeight: 700, alignSelf: 'flex-start' },
     cardTitle: { fontSize: 22, fontWeight: 900, margin: 0, color: '#1C1215' },
-    cardSub: { fontSize: 14, color: '#6B5E55', margin: 0, fontStyle: 'italic', fontFamily: 'Georgia, serif' },
+    cardSub: { fontSize: 14, color: '#6B5E55', margin: 0, fontStyle: 'italic', fontFamily: FONT_DISPLAY },
     cardArrow: { width: 36, height: 36, borderRadius: '50%', background: '#1C1215', color: '#fff', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16, alignSelf: 'flex-start', marginTop: 'auto', pointerEvents: 'none' },
     cardEmoji: { position: 'absolute', right: 20, bottom: 16, fontSize: 56, opacity: 0.28, pointerEvents: 'none' },
     gradesSec: { background: '#fff', padding: '56px 24px' },
     gradesRow: { display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 28 },
     gradeChip: { borderRadius: 999, padding: '8px 20px', fontSize: 14, fontWeight: 700, border: 'none', cursor: 'pointer' },
-    whySec: { background: '#F5FBFF', padding: '64px 24px' },
+    whySec: { background: '#F6F4EE', padding: '64px 24px' },
     whyGrid: { display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, marginTop: 40 },
-    whyCard: { background: '#fff', borderRadius: 16, padding: '28px 24px', display: 'flex', flexDirection: 'column', gap: 12, border: '1px solid #F0E6D6' },
+    whyCard: { background: '#fff', borderRadius: 16, padding: '28px 24px', display: 'flex', flexDirection: 'column', gap: 12, border: '1px solid #C5DDBB' },
     whyIcon: { width: 48, height: 48, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, flexShrink: 0 },
     whyTitle: { fontSize: 18, fontWeight: 800, margin: 0, color: '#1C1215' },
     whyText: { fontSize: 14, color: '#6B5E55', margin: 0, lineHeight: 1.6 },
     startSec: { background: '#fff', padding: '64px 24px' },
     startInner: { maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40, alignItems: 'start' },
     statsGrid: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginTop: 28 },
-    statCard: { background: '#F0FAFF', borderRadius: 14, padding: '20px 18px', border: '1px solid #E0F4FF' },
-    statVal: { fontSize: 28, fontWeight: 900, color: '#525AFF', margin: 0 },
+    statCard: { background: '#EEF5EB', borderRadius: 14, padding: '20px 18px', border: '1px solid #C5DDBB' },
+    statVal: { fontSize: 28, fontWeight: 900, color: '#3F7D58', margin: 0 },
     statLabel: { fontSize: 13, color: '#6B5E55', margin: '4px 0 0' },
-    readCard: { background: 'linear-gradient(135deg, #E0F4FF 0%, #F0FAFF 100%)', borderRadius: 20, padding: '36px 32px', display: 'flex', flexDirection: 'column', gap: 16, border: '1px solid #B8E4FB' },
+    readCard: { background: 'linear-gradient(135deg, #E8F2E4 0%, #EEF5EB 100%)', borderRadius: 20, padding: '36px 32px', display: 'flex', flexDirection: 'column', gap: 16, border: '1px solid #C5DDBB' },
     readTitle: { fontSize: 26, fontWeight: 900, margin: 0, color: '#1C1215' },
     readSub: { fontSize: 14, color: '#6B5E55', margin: 0, lineHeight: 1.6 },
     readBtn: { alignSelf: 'flex-start', background: '#1C1215', color: '#fff', border: 'none', borderRadius: 999, padding: '12px 24px', fontSize: 14, fontWeight: 700, cursor: 'pointer' },
-    ctaSec: { background: '#F5FBFF', padding: '64px 24px' },
-    ctaCard: { maxWidth: 680, margin: '0 auto', background: 'linear-gradient(135deg, #F0FAFF 0%, #FFF7ED 100%)', borderRadius: 24, padding: '52px 40px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, border: '1px solid #E8D5C4' },
+    ctaSec: { background: '#F6F4EE', padding: '64px 24px' },
+    ctaCard: { maxWidth: 680, margin: '0 auto', background: 'linear-gradient(135deg, #E8F2E4 0%, #F6F4EE 100%)', borderRadius: 24, padding: '52px 40px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, border: '1px solid #C5DDBB' },
     ctaTitle: { fontSize: 'clamp(22px, 4vw, 34px)', fontWeight: 900, margin: 0, color: '#1C1215' },
     ctaSub: { fontSize: 15, color: '#6B5E55', margin: 0 },
-    ctaBtn: { background: '#525AFF', color: '#fff', border: 'none', borderRadius: 999, padding: '14px 32px', fontSize: 16, fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 14px rgba(82,90,255,0.32)' },
+    ctaBtn: { background: '#3F7D58', color: '#fff', border: 'none', borderRadius: 999, padding: '14px 32px', fontSize: 16, fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 14px rgba(63,125,88,0.32)' },
     contactSec: { background: '#fff', padding: '64px 24px', textAlign: 'center' },
     avatarsRow: { fontSize: 36, display: 'flex', gap: 12, justifyContent: 'center', marginBottom: 16 },
     contactTitle: { fontSize: 'clamp(22px, 3vw, 34px)', fontWeight: 900, margin: '0 0 8px', color: '#1C1215' },
     contactSub: { fontSize: 15, color: '#6B5E55', margin: '0 0 28px' },
     contactBtns: { display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' },
     contactBtn: { borderRadius: 999, padding: '12px 28px', fontSize: 15, fontWeight: 700, border: 'none', cursor: 'pointer' },
-    faqSec: { background: '#F5FBFF', padding: '64px 24px 80px' },
+    faqSec: { background: '#F6F4EE', padding: '64px 24px 80px' },
     faqInner: { maxWidth: 720, margin: '40px auto 0' },
-    faqItem: { background: '#fff', borderRadius: 14, marginBottom: 10, overflow: 'hidden', border: '1px solid #F0E6D6' },
+    faqItem: { background: '#fff', borderRadius: 14, marginBottom: 10, overflow: 'hidden', border: '1px solid #C5DDBB' },
     faqQ: { display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '18px 20px', cursor: 'pointer', fontWeight: 700, fontSize: 15, color: '#1C1215', background: 'none', border: 'none', width: '100%', textAlign: 'left', gap: 12 },
     faqA: { padding: '0 20px 16px', fontSize: 14, color: '#6B5E55', lineHeight: 1.7, margin: 0 },
     photosSec: { background: '#fff', padding: '72px 24px' },
@@ -2978,7 +2978,7 @@ function RedesignedHomeScreen({ user, stats, progress, accuracy, onSelectGrade, 
     photoImg: { width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' },
     photoOverlay: { position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 20px 16px', background: 'linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 100%)' },
     photoCaption: { color: '#fff', fontWeight: 800, fontSize: 16, margin: 0, lineHeight: 1.3 },
-    photoTag: { display: 'inline-block', background: '#525AFF', color: '#fff', borderRadius: 999, padding: '3px 10px', fontSize: 11, fontWeight: 800, letterSpacing: 0.5, marginBottom: 6 },
+    photoTag: { display: 'inline-block', background: '#3F7D58', color: '#fff', borderRadius: 999, padding: '3px 10px', fontSize: 11, fontWeight: 800, letterSpacing: 0.5, marginBottom: 6 },
   };
 
   const gradeColors = ['#FDE8BB','#FEF3C7','#D1FAE5','#CFFAFE','#E0F4FF','#FCE7F3','#FFE4E6','#FDE8BB','#FEF3C7','#D1FAE5','#E0F4FF','#FCE7F3','#FDE8BB','#CFFAFE'];
@@ -3008,7 +3008,7 @@ function RedesignedHomeScreen({ user, stats, progress, accuracy, onSelectGrade, 
             <span style={{ fontSize: 72, lineHeight: 0.8, color: '#4AB5B5', flexShrink: 0, fontFamily: 'Georgia, serif', fontWeight: 900, marginTop: 6 }}>"</span>
             <p style={{ margin: 0, fontSize: 17, color: '#3D3580', lineHeight: 1.7, fontStyle: 'italic', fontWeight: 600 }}>
               When learning feels like play, kids absorb more and develop a lasting love for discovery.{' '}
-              <button onClick={onAbout} style={{ background: 'none', border: 'none', padding: 0, color: '#525AFF', fontWeight: 700, fontSize: 17, cursor: 'pointer', textDecoration: 'underline', fontStyle: 'normal' }}>Read our story →</button>
+              <button onClick={onAbout} style={{ background: 'none', border: 'none', padding: 0, color: '#3F7D58', fontWeight: 700, fontSize: 17, cursor: 'pointer', textDecoration: 'underline', fontStyle: 'normal' }}>Read our story →</button>
             </p>
           </div>
 
@@ -3178,7 +3178,7 @@ function RedesignedHomeScreen({ user, stats, progress, accuracy, onSelectGrade, 
           </div>
           <div style={artS.readCard}>
             <div style={{ fontSize: 40 }}>🎓</div>
-            <h3 style={artS.readTitle}>Ready to <em style={{ fontStyle: 'italic', fontFamily: 'Georgia,serif', color: '#525AFF' }}>explore</em> skills?</h3>
+            <h3 style={artS.readTitle}>Ready to <em style={{ fontStyle: 'italic', fontFamily: FONT_DISPLAY, color: '#3F7D58' }}>explore</em> skills?</h3>
             <p style={artS.readSub}>Pick a grade level to see all available practice skills and begin your learning journey.</p>
             <button onClick={() => onSelectGrade(GRADES[0])} style={artS.readBtn}>Browse all grades ↗</button>
           </div>
@@ -3186,26 +3186,26 @@ function RedesignedHomeScreen({ user, stats, progress, accuracy, onSelectGrade, 
       </section>
 
       {/* ── Sign Up CTA + Contact (same row) ── */}
-      <section style={{ background: '#F5FBFF', padding: '64px 24px' }} className="art-section">
+      <section style={{ background: '#F6F4EE', padding: '64px 24px' }} className="art-section">
         <div className="art-cta-contact-row" style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', gap: 24, alignItems: 'stretch' }}>
 
           {/* CTA card */}
           <div style={{ ...artS.ctaCard, flex: 1, margin: 0 }} className="art-cta-card">
             <div style={{ fontSize: 52 }}>👧</div>
-            <h2 style={artS.ctaTitle}>Sign up for <em style={{ fontStyle: 'italic', fontFamily: 'Georgia,serif', color: '#525AFF' }}>Free Practice</em></h2>
+            <h2 style={artS.ctaTitle}>Sign up for <em style={{ fontStyle: 'italic', fontFamily: FONT_DISPLAY, color: '#3F7D58' }}>Free Practice</em></h2>
             <p style={artS.ctaSub}>Join thousands of students already learning with WIJS.</p>
             <button onClick={onDashboard} style={artS.ctaBtn}>Get started ↗</button>
           </div>
 
           {/* Contact card */}
-          <div style={{ flex: 1, background: '#fff', borderRadius: 24, padding: '52px 40px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, border: '1px solid #E8D5C4' }}>
+          <div style={{ flex: 1, background: '#fff', borderRadius: 24, padding: '52px 40px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, border: '1px solid #C5DDBB' }}>
             <div style={artS.avatarsRow}><span>👩‍🏫</span><span>👦</span><span>👧</span></div>
-            <h2 style={artS.contactTitle}>We are open <em style={{ fontStyle: 'italic', fontFamily: 'Georgia,serif', color: '#525AFF' }}>to talking</em></h2>
+            <h2 style={artS.contactTitle}>We are open <em style={{ fontStyle: 'italic', fontFamily: FONT_DISPLAY, color: '#3F7D58' }}>to talking</em></h2>
             <p style={artS.contactSub}>Have questions about WIJS? Reach out — we're here to help.</p>
             <div style={artS.contactBtns}>
-              <button onClick={onDashboard} style={{ ...artS.contactBtn, background: '#525AFF', color: '#fff' }}>Contact us</button>
-              <button onClick={onDashboard} style={{ ...artS.contactBtn, background: '#F0FAFF', color: '#3A41CC' }}>Call us</button>
-              <button onClick={onDashboard} style={{ ...artS.contactBtn, background: '#F0FAFF', color: '#525AFF' }}>Video chat</button>
+              <button onClick={onDashboard} style={{ ...artS.contactBtn, background: '#3F7D58', color: '#fff' }}>Contact us</button>
+              <button onClick={onDashboard} style={{ ...artS.contactBtn, background: '#EEF5EB', color: '#3A5A33' }}>Call us</button>
+              <button onClick={onDashboard} style={{ ...artS.contactBtn, background: '#EEF5EB', color: '#3F7D58' }}>Video chat</button>
             </div>
           </div>
 
@@ -3213,14 +3213,14 @@ function RedesignedHomeScreen({ user, stats, progress, accuracy, onSelectGrade, 
       </section>
 
       {/* ── About Us punchline ── */}
-      <section style={{ background: '#F0FAFF', padding: '64px 24px', textAlign: 'center' }} className="art-section">
+      <section style={{ background: '#EEF5EB', padding: '64px 24px', textAlign: 'center' }} className="art-section">
         <div style={artS.secWrap}>
           <div style={artS.secLabel}>Our Story</div>
           <h2 style={artS.secTitle}>Built by a <em style={artS.secEm}>parent</em>, for every child</h2>
           <p style={{ fontSize: 16, color: '#6B5E55', maxWidth: 600, margin: '16px auto 28px', lineHeight: 1.7 }}>
             "When learning feels like play, kids absorb more and develop a lasting love for discovery." — A WIJS parent
           </p>
-          <button onClick={onAbout} style={{ background: 'none', border: '2px solid #525AFF', color: '#525AFF', borderRadius: 999, padding: '12px 28px', fontSize: 15, fontWeight: 700, cursor: 'pointer' }}>
+          <button onClick={onAbout} style={{ background: 'none', border: '2px solid #3F7D58', color: '#3F7D58', borderRadius: 999, padding: '12px 28px', fontSize: 15, fontWeight: 700, cursor: 'pointer' }}>
             Read →
           </button>
         </div>
@@ -3237,7 +3237,7 @@ function RedesignedHomeScreen({ user, stats, progress, accuracy, onSelectGrade, 
             <div key={i} style={artS.faqItem}>
               <button style={artS.faqQ} onClick={() => setOpenFaq(openFaq === i ? null : i)}>
                 <span>{faq.q}</span>
-                <ChevronRight size={20} style={{ flexShrink: 0, color: openFaq === i ? '#525AFF' : '#9CA3AF', transform: openFaq === i ? 'rotate(90deg)' : 'rotate(0deg)', transition: 'transform 0.2s ease, color 0.2s ease' }} />
+                <ChevronRight size={20} style={{ flexShrink: 0, color: openFaq === i ? '#3F7D58' : '#9CA3AF', transform: openFaq === i ? 'rotate(90deg)' : 'rotate(0deg)', transition: 'transform 0.2s ease, color 0.2s ease' }} />
               </button>
               {openFaq === i && <p style={artS.faqA}>{faq.a}</p>}
             </div>
@@ -3245,7 +3245,7 @@ function RedesignedHomeScreen({ user, stats, progress, accuracy, onSelectGrade, 
           <div style={{ textAlign: 'center', marginTop: 20 }}>
             <button
               onClick={() => { setFaqExpanded(e => !e); setOpenFaq(null); }}
-              style={{ background: 'none', border: '1.5px solid #525AFF', color: '#525AFF', borderRadius: 999, padding: '10px 28px', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}
+              style={{ background: 'none', border: '1.5px solid #3F7D58', color: '#3F7D58', borderRadius: 999, padding: '10px 28px', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}
             >
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
                 {faqExpanded ? 'Show less' : `Show ${faqs.length - 3} more questions`}
@@ -3263,19 +3263,19 @@ function RedesignedHomeScreen({ user, stats, progress, accuracy, onSelectGrade, 
 // ---------- ABOUT US ----------
 function AboutScreen({ onBack }) {
   return (
-    <div style={{ background: '#F5FBFF', minHeight: '100vh', padding: '0 0 80px' }}>
+    <div style={{ background: '#F6F4EE', minHeight: '100vh', padding: '0 0 80px' }}>
       {/* Hero banner */}
-      <div style={{ background: 'linear-gradient(135deg, #525AFF 0%, #4AB5B5 100%)', padding: '64px 24px 72px', textAlign: 'center', color: '#fff' }}>
+      <div style={{ background: 'linear-gradient(135deg, #1B2B22 0%, #1B3526 50%, #3F7D58 100%)', padding: '64px 24px 72px', textAlign: 'center', color: '#fff' }}>
         <div style={{ fontSize: 12, fontWeight: 900, letterSpacing: 2, textTransform: 'uppercase', opacity: 0.8, marginBottom: 12 }}>Our Story</div>
-        <h1 style={{ fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, margin: '0 0 16px', lineHeight: 1.1 }}>About <em style={{ fontStyle: 'italic', fontFamily: 'Georgia, serif' }}>WIJS</em></h1>
+        <h1 style={{ fontSize: 'clamp(28px, 5vw, 52px)', fontWeight: 900, margin: '0 0 16px', lineHeight: 1.1, fontFamily: FONT_DISPLAY }}>About <em style={{ fontStyle: 'italic' }}>WIJS</em></h1>
         <p style={{ fontSize: 16, opacity: 0.9, maxWidth: 520, margin: '0 auto' }}>A platform born from a parent's belief that every child deserves to love learning.</p>
       </div>
 
       {/* Content */}
       <div style={{ maxWidth: 760, margin: '0 auto', padding: '56px 24px 0' }}>
         {/* Quote block */}
-        <div style={{ background: '#E0F4FF', borderLeft: '4px solid #525AFF', borderRadius: '0 12px 12px 0', padding: '20px 24px', marginBottom: 40 }}>
-          <p style={{ fontSize: 18, fontWeight: 700, color: '#1C1215', margin: 0, fontStyle: 'italic', fontFamily: 'Georgia, serif', lineHeight: 1.5 }}>
+        <div style={{ background: '#E8F2E4', borderLeft: '4px solid #3F7D58', borderRadius: '0 12px 12px 0', padding: '20px 24px', marginBottom: 40 }}>
+          <p style={{ fontSize: 18, fontWeight: 700, color: '#1C1215', margin: 0, fontStyle: 'italic', fontFamily: FONT_DISPLAY, lineHeight: 1.5 }}>
             "When learning feels like play, kids absorb more and develop a lasting love for discovery."
           </p>
         </div>
@@ -3292,8 +3292,8 @@ function AboutScreen({ onBack }) {
         {/* Stats row */}
         <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', margin: '40px 0', justifyContent: 'center' }}>
           {[['500+', 'Skills available'], ['13', 'Grade levels'], ['4', 'Core subjects'], ['K–12', 'Coverage']].map(([val, label]) => (
-            <div key={label} style={{ background: '#fff', border: '1px solid #B8E4FB', borderRadius: 16, padding: '24px 32px', textAlign: 'center', flex: '1 1 130px', minWidth: 120 }}>
-              <div style={{ fontSize: 28, fontWeight: 900, color: '#525AFF' }}>{val}</div>
+            <div key={label} style={{ background: '#fff', border: '1px solid #C5DDBB', borderRadius: 16, padding: '24px 32px', textAlign: 'center', flex: '1 1 130px', minWidth: 120 }}>
+              <div style={{ fontSize: 28, fontWeight: 900, color: '#3F7D58', fontFamily: FONT_DISPLAY }}>{val}</div>
               <div style={{ fontSize: 13, color: '#6B7280', marginTop: 4 }}>{label}</div>
             </div>
           ))}
@@ -3301,7 +3301,7 @@ function AboutScreen({ onBack }) {
 
         {/* CTA */}
         <div style={{ textAlign: 'center', marginTop: 48 }}>
-          <button onClick={onBack} style={{ background: '#525AFF', color: '#fff', border: 'none', borderRadius: 999, padding: '14px 36px', fontSize: 16, fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 14px rgba(82,90,255,0.32)' }}>
+          <button onClick={onBack} style={{ background: '#3F7D58', color: '#fff', border: 'none', borderRadius: 999, padding: '14px 36px', fontSize: 16, fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 14px rgba(63,125,88,0.32)' }}>
             Start learning ↗
           </button>
         </div>
@@ -3337,13 +3337,13 @@ function SignInScreen({ onSignIn, onCreateAccount, onJoin, onBack }) {
   };
 
   const features = [
-    { icon: '🌐', color: '#525AFF', title: 'Comprehensive K-12 Curriculum',
+    { icon: '🌐', color: '#3F7D58', title: 'Comprehensive K-12 Curriculum',
       text: 'More than 17,000 adaptive skills designed to support and challenge every learner' },
-    { icon: '📊', color: '#8FD9FB', title: 'Real-Time Diagnostic',
+    { icon: '📊', color: '#7FB069', title: 'Real-Time Diagnostic',
       text: "Up-to-date, accurate assessment of students' knowledge levels in math and language arts" },
-    { icon: '🎯', color: '#525AFF', title: 'Personalized Guidance',
+    { icon: '🎯', color: '#3F7D58', title: 'Personalized Guidance',
       text: 'Targeted skill recommendations help address learning gaps and accelerate growth' },
-    { icon: '📈', color: '#6D8BC0', title: 'Actionable Analytics',
+    { icon: '📈', color: '#C4693A', title: 'Actionable Analytics',
       text: 'Easy-to-use reports provide real-time insight into student progress' },
   ];
 
@@ -3400,9 +3400,9 @@ function SignInScreen({ onSignIn, onCreateAccount, onJoin, onBack }) {
                       style={{
                         padding: '10px 8px',
                         borderRadius: 10,
-                        border: role === option ? '2px solid #525AFF' : '1px solid #D1D5DB',
-                        background: role === option ? '#F0FAFF' : 'white',
-                        color: role === option ? '#525AFF' : '#334155',
+                        border: role === option ? '2px solid #3F7D58' : '1px solid #D1D5DB',
+                        background: role === option ? '#EEF5EB' : 'white',
+                        color: role === option ? '#3F7D58' : '#334155',
                         fontWeight: 800,
                         textTransform: 'capitalize',
                         cursor: 'pointer',
@@ -3829,7 +3829,7 @@ function DashboardPreview({ stats, progress, onClick }) {
         </div>
         <div style={styles.dashStatRow}>
           <span style={{ color: '#6B7280', fontSize: 13 }}>Best run</span>
-          <strong style={{ color: '#525AFF' }}>{stats.bestStreak} in a row</strong>
+          <strong style={{ color: '#3F7D58' }}>{stats.bestStreak} in a row</strong>
         </div>
       </div>
       <div style={styles.dashCTA}>View full dashboard <ChevronRight size={14} /></div>
@@ -3926,65 +3926,102 @@ function GradeScreen({ grade, onBack, onSelectSubject, progress }) {
 // ---------- SUBJECT SCREEN ----------
 function GradeSidebarItem({ g, isActive, label, fullLabel, onNavigate }) {
   const [hovered, setHovered] = useState(false);
-  const expanded = hovered;
   return (
     <button
       onClick={onNavigate}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onFocus={() => setHovered(true)}
+      onBlur={() => setHovered(false)}
       title={fullLabel}
+      aria-label={fullLabel}
       style={{
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
+        width: 42,
         height: 36,
         border: 'none',
         cursor: 'pointer',
         background: 'none',
-        padding: 0,
-        zIndex: expanded ? 10 : 1,
+        padding: '0 3px',
+        zIndex: hovered ? 20 : isActive ? 8 : 1,
       }}
     >
-      {/* Expanding pill behind circle */}
+      {/* Active rail marker */}
+      <span
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          left: 0,
+          width: 4,
+          height: isActive ? 24 : hovered ? 16 : 0,
+          borderRadius: 999,
+          background: isActive ? g.color : '#CBD5E1',
+          boxShadow: isActive ? `0 0 14px ${g.color}66` : 'none',
+          transition: 'height 0.18s ease, background 0.18s ease',
+        }}
+      />
+
+      {/* Fixed bead */}
       <div style={{
-        position: 'absolute',
-        left: 0,
-        top: 0,
-        height: 36,
-        borderRadius: 18,
-        background: isActive ? '#2D1B69' : hovered ? g.color : 'transparent',
-        width: expanded ? 'calc(100% + 0px)' : 36,
-        minWidth: expanded ? 130 : 36,
-        transition: 'min-width 0.18s ease, background 0.15s ease',
+        width: isActive ? 34 : 30,
+        height: isActive ? 34 : 30,
+        borderRadius: '50%',
+        flexShrink: 0,
+        background: g.color,
         display: 'flex',
         alignItems: 'center',
-        overflow: 'hidden',
-        whiteSpace: 'nowrap',
-        paddingRight: expanded ? 14 : 0,
+        justifyContent: 'center',
+        fontWeight: 900,
+        fontSize: 12,
+        color: 'white',
+        border: '3px solid white',
+        boxShadow: isActive
+          ? `0 7px 18px ${g.color}55, 0 0 0 4px ${g.color}24`
+          : hovered
+            ? `0 6px 16px ${g.color}44, 0 0 0 4px #F8FAFC`
+            : '0 2px 8px rgba(15,23,42,0.10)',
+        transform: hovered ? 'translateX(3px) scale(1.04)' : 'translateX(0) scale(1)',
+        transition: 'width 0.18s ease, height 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease',
       }}>
-        {/* Circle dot */}
-        <div style={{
-          width: 36, height: 36, borderRadius: '50%', flexShrink: 0,
-          background: g.color,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontWeight: 900, fontSize: 13, color: 'white',
-          boxShadow: isActive ? `0 2px 10px ${g.color}80` : 'none',
-          position: 'relative', zIndex: 1,
-        }}>
-          {label}
-        </div>
-        {/* Grade name text */}
-        <span style={{
-          fontSize: 13, fontWeight: 700, color: 'white',
-          paddingLeft: 8, opacity: expanded ? 1 : 0,
-          transition: 'opacity 0.12s ease 0.05s',
-          pointerEvents: 'none',
-        }}>
-          {fullLabel}
-        </span>
+        {label}
       </div>
-      {/* Invisible spacer so button has correct width */}
-      <div style={{ width: 36, height: 36, flexShrink: 0 }} />
+
+      {/* Floating label, separate from the button footprint */}
+      <span
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          left: 48,
+          top: '50%',
+          transform: hovered ? 'translateY(-50%) translateX(0)' : 'translateY(-50%) translateX(-6px)',
+          opacity: hovered ? 1 : 0,
+          pointerEvents: 'none',
+          whiteSpace: 'nowrap',
+          background: '#111827',
+          color: 'white',
+          borderRadius: 10,
+          padding: '7px 10px 7px 12px',
+          fontSize: 12,
+          fontWeight: 800,
+          lineHeight: 1,
+          boxShadow: '0 12px 28px rgba(15,23,42,0.22)',
+          transition: 'opacity 0.16s ease, transform 0.16s ease',
+        }}
+      >
+        <span style={{
+          position: 'absolute',
+          left: -4,
+          top: '50%',
+          width: 8,
+          height: 8,
+          background: '#111827',
+          transform: 'translateY(-50%) rotate(45deg)',
+        }} />
+        {fullLabel}
+      </span>
     </button>
   );
 }
@@ -4022,8 +4059,8 @@ function SubjectScreen({ grade, subject, onBack, onSelectSkill, progress, onSele
           {['Grades', 'Topics', 'Week by week', 'Skill plans'].map(v => (
             <button key={v} onClick={() => setViewBy(v.toLowerCase())} style={{
               background: 'none', border: 'none', fontSize: 14, fontWeight: 600, cursor: 'pointer', padding: '8px 4px',
-              color: viewBy === v.toLowerCase() ? '#525AFF' : '#6D8BC0',
-              borderBottom: viewBy === v.toLowerCase() ? '3px solid #525AFF' : '3px solid transparent',
+              color: viewBy === v.toLowerCase() ? '#3F7D58' : '#6D8BC0',
+              borderBottom: viewBy === v.toLowerCase() ? '3px solid #3F7D58' : '3px solid transparent',
               marginBottom: -3,
             }}>{v}</button>
           ))}
@@ -4273,7 +4310,7 @@ function Mascot({ state, visible }) {
         display:'flex', alignItems:'center', justifyContent:'center',
         fontSize:30,
         boxShadow:'0 4px 18px rgba(0,0,0,0.13)',
-        border:'3px solid #525AFF',
+        border:'3px solid #3F7D58',
         animation: faceAnim,
       }}>
         {pip.face}
@@ -4539,7 +4576,7 @@ function SkillScreen({ skill, progress, onBack, onAnswer, onComplete }) {
 
             {/* SmartScore */}
             <div style={{ borderRadius: 8, overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
-              <div style={{ background: '#D97706', color: 'white', fontSize: 11, fontWeight: 800, textAlign: 'center', padding: '6px 8px', letterSpacing: 0.3, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
+              <div style={{ background: '#C4693A', color: 'white', fontSize: 11, fontWeight: 800, textAlign: 'center', padding: '6px 8px', letterSpacing: 0.3, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
                 <span>SmartScore</span>
                 <span style={{ width: 14, height: 14, borderRadius: '50%', background: 'rgba(0,0,0,0.2)', fontSize: 9, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'default' }} title="SmartScore increases when you answer correctly and decreases for wrong answers">?</span>
               </div>
@@ -4568,7 +4605,7 @@ function SkillScreen({ skill, progress, onBack, onAnswer, onComplete }) {
                 <div style={{ margin: '6px 8px 0', height: 5, borderRadius: 999, background: '#E2E8F0', overflow: 'hidden' }}>
                   <div style={{
                     height: '100%', borderRadius: 999,
-                    background: smartScore >= 80 ? '#059669' : smartScore >= 60 ? '#6D8BC0' : '#D97706',
+                    background: smartScore >= 80 ? '#059669' : smartScore >= 60 ? '#6D8BC0' : '#C4693A',
                     width: `${smartScore}%`,
                     transition: 'width 0.4s ease',
                   }} />
@@ -4829,7 +4866,7 @@ function ResultsScreen({ stats, skill, color, onRestart, onBack }) {
       <div style={{ margin:'12px 0 24px', background:'#F3F4F6', borderRadius:999, height:10, overflow:'hidden' }}>
         <div style={{
           height:'100%', borderRadius:999,
-          background: accuracy === 100 ? '#059669' : accuracy >= 80 ? '#525AFF' : accuracy >= 60 ? '#6D8BC0' : '#DC2626',
+          background: accuracy === 100 ? '#059669' : accuracy >= 80 ? '#3F7D58' : accuracy >= 60 ? '#C4693A' : '#DC2626',
           width:`${accuracy}%`,
           animation:'growBar 1s cubic-bezier(0.22,1,0.36,1) 0.35s both',
         }} />
@@ -4922,10 +4959,10 @@ function ParentDashboard({ stats, progress, onReports, onPractice }) {
   const accuracy = stats.totalAnswered ? Math.round((stats.totalCorrect / stats.totalAnswered) * 100) : 0;
   const activeSkills = Object.keys(progress).length;
   const weeklyRows = [
-    ['Mon', 12, '#F97316'],
-    ['Tue', 18, '#525AFF'],
+    ['Mon', 12, '#7FB069'],
+    ['Tue', 18, '#3F7D58'],
     ['Wed', 8,  '#4AB5B5'],
-    ['Thu', 24, '#D97706'],
+    ['Thu', 24, '#C4693A'],
     ['Fri', 15, '#EC4899'],
   ];
 
@@ -4947,10 +4984,10 @@ function ParentDashboard({ stats, progress, onReports, onPractice }) {
       </div>
 
       <div style={styles.dashHeroStats}>
-        <BigStat icon={<Target size={22}/>} value={stats.totalAnswered} label="Questions answered" color="#525AFF" />
+        <BigStat icon={<Target size={22}/>} value={stats.totalAnswered} label="Questions answered" color="#3F7D58" />
         <BigStat icon={<TrendingUp size={22}/>} value={`${accuracy}%`} label="Accuracy" color="#059669" />
         <BigStat icon={<BookOpen size={22}/>} value={activeSkills} label="Skills practiced" color="#8FD9FB" />
-        <BigStat icon={<Crown size={22}/>} value={stats.masteredSkills} label="Mastered" color="#525AFF" />
+        <BigStat icon={<Crown size={22}/>} value={stats.masteredSkills} label="Mastered" color="#3F7D58" />
       </div>
 
       <section style={{ marginTop: 36 }}>
@@ -5003,10 +5040,10 @@ function ProgressReports({ stats, progress, onPractice }) {
           <span>{new Date().toLocaleDateString()}</span>
         </div>
         <div style={styles.dashHeroStats}>
-          <BigStat icon={<Target size={22}/>} value={stats.totalAnswered} label="Answered" color="#525AFF" />
+          <BigStat icon={<Target size={22}/>} value={stats.totalAnswered} label="Answered" color="#3F7D58" />
           <BigStat icon={<CheckCircle2 size={22}/>} value={stats.totalCorrect} label="Correct" color="#059669" />
           <BigStat icon={<Flame size={22}/>} value={stats.bestStreak} label="Best streak" color="#6D8BC0" />
-          <BigStat icon={<AwardIcon />} value={stats.earnedBadges.length} label="Badges" color="#525AFF" />
+          <BigStat icon={<AwardIcon />} value={stats.earnedBadges.length} label="Badges" color="#3F7D58" />
         </div>
       </div>
 
@@ -5044,7 +5081,7 @@ const FALLBACK_PLANS = [
 
 const SUB_STATUS_COLORS = {
   ACTIVE:     { background: '#DCFCE7', color: '#166534' },
-  TRIALING:   { background: '#E0F4FF', color: '#3A41CC' },
+  TRIALING:   { background: '#E8F2E4', color: '#3A5A33' },
   PAST_DUE:   { background: '#FEF9C3', color: '#854D0E' },
   CANCELED:   { background: '#F3F4F6', color: '#6B7280' },
   INCOMPLETE: { background: '#FEE2E2', color: '#991B1B' },
@@ -5153,7 +5190,7 @@ function SubscriptionScreen({ onBack, user, pushToast }) {
           {isSignedIn && activeSub && (
             <div style={{
               background: 'white',
-              border: '1.5px solid #F0E6D6',
+              border: '1.5px solid #C5DDBB',
               borderRadius: 18,
               padding: '20px 24px',
               marginBottom: 24,
@@ -5166,7 +5203,7 @@ function SubscriptionScreen({ onBack, user, pushToast }) {
             }}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 4 }}>
-                  <span style={{ fontFamily: FONT_DISPLAY, fontSize: 20, color: '#525AFF', fontWeight: 900 }}>
+                  <span style={{ fontFamily: FONT_DISPLAY, fontSize: 20, color: '#3F7D58', fontWeight: 900 }}>
                     {activeSub.plan?.name ?? 'Subscription'}
                   </span>
                   <span style={{
@@ -5213,7 +5250,7 @@ function SubscriptionScreen({ onBack, user, pushToast }) {
                 <div key={plan.id} style={{ ...styles.planCard, ...(plan.featured ? styles.planFeatured : {}), position: 'relative' }}>
                   {plan.featured && <div style={styles.planBadge}>Best value</div>}
                   {isCurrent && !isCanceling && (
-                    <div style={{ ...styles.planBadge, background: '#525AFF', right: 'auto', left: 14 }}>Current</div>
+                    <div style={{ ...styles.planBadge, background: '#3F7D58', right: 'auto', left: 14 }}>Current</div>
                   )}
                   <h2 style={styles.planName}>{plan.name}</h2>
                   <div style={styles.planPrice}>
@@ -5268,7 +5305,7 @@ function SubscriptionScreen({ onBack, user, pushToast }) {
                     </span>
                     <span>
                       {inv.pdfUrl
-                        ? <a href={inv.pdfUrl} target="_blank" rel="noreferrer" style={{ color: '#525AFF', fontWeight: 700, fontSize: 13 }}>Download</a>
+                        ? <a href={inv.pdfUrl} target="_blank" rel="noreferrer" style={{ color: '#3F7D58', fontWeight: 700, fontSize: 13 }}>Download</a>
                         : '—'}
                     </span>
                   </div>
@@ -5319,7 +5356,7 @@ function AdminContentManagement({ onPractice, onReports }) {
             icon={[<GraduationCap size={22}/>, <BookOpen size={22}/>, <Target size={22}/>, <CheckCircle2 size={22}/>][idx]}
             value={value}
             label={label}
-            color={['#525AFF', '#8FD9FB', '#525AFF', '#6D8BC0'][idx]}
+            color={['#3F7D58', '#7FB069', '#3F7D58', '#C4693A'][idx]}
           />
         ))}
       </div>
@@ -5422,7 +5459,7 @@ function Dashboard({ title = 'Dashboard', user, stats, progress, onPickSkill }) 
     <div style={styles.container} className="resp-container">
       <div style={styles.dashHero}>
         <div>
-          <div style={{ fontSize: 13, fontWeight: 600, color: '#525AFF', letterSpacing: 1 }}>YOUR LEARNING JOURNEY</div>
+          <div style={{ fontSize: 13, fontWeight: 600, color: '#3F7D58', letterSpacing: 1 }}>YOUR LEARNING JOURNEY</div>
           <h1 style={styles.dashHeroTitle} className="dash-hero-title">
             {firstName ? `Welcome back, ${firstName}!` : title}
           </h1>
@@ -5435,7 +5472,7 @@ function Dashboard({ title = 'Dashboard', user, stats, progress, onPickSkill }) 
         <div style={styles.dashHeroStats}>
           <BigStat icon={<Target size={22}/>} value={stats.totalAnswered} label="Questions answered" color="#6D8BC0" />
           <BigStat icon={<TrendingUp size={22}/>} value={`${accuracy}%`} label="Overall accuracy" color="#059669" />
-          <BigStat icon={<Crown size={22}/>} value={stats.masteredSkills} label="Skills mastered" color="#525AFF" />
+          <BigStat icon={<Crown size={22}/>} value={stats.masteredSkills} label="Skills mastered" color="#3F7D58" />
           <BigStat icon={<Flame size={22}/>} value={stats.bestStreak} label="Best streak" color="#6D8BC0" />
         </div>
       </div>
@@ -5619,7 +5656,7 @@ function Dashboard({ title = 'Dashboard', user, stats, progress, onPickSkill }) 
           <SectionHeader
             title={`All Quiz Records (${allActivity.length})`}
             subtitle="Every skill you've ever practiced, sorted by most recent"
-            icon={<BarChart3 size={20} color="#525AFF" />}
+            icon={<BarChart3 size={20} color="#3F7D58" />}
           />
           <div style={styles.activityTable}>
             {allActivity.map(({ skill, p, mastery }) => {
@@ -5677,7 +5714,7 @@ function BadgesScreen({ stats, onBack }) {
     <div style={styles.container} className="resp-container">
       <BackBtn onClick={onBack} label="Back home" />
       <div style={styles.badgesHero} className="badges-hero">
-        <Trophy size={48} color="#525AFF" />
+        <Trophy size={48} color="#3F7D58" />
         <div>
           <h1 style={styles.dashHeroTitle} className="dash-hero-title">Badges & Achievements</h1>
           <p style={styles.dashHeroSub}>
@@ -5693,7 +5730,7 @@ function BadgesScreen({ stats, onBack }) {
             <div key={b.id} style={{
               ...styles.badgeCard,
               background: earned ? 'linear-gradient(135deg, #FFF8E1, #FFE082)' : '#F9FAFB',
-              borderColor: earned ? '#525AFF' : '#E5E7EB',
+              borderColor: earned ? '#3F7D58' : '#E5E7EB',
             }}>
               <div style={{
                 ...styles.badgeEmoji,
@@ -5805,16 +5842,11 @@ function randomCheer() {
 function StyleInjector() {
   return (
     <style>{`
-      @font-face {
-        font-family: 'Mona Sans';
-        src: url('https://github.githubassets.com/assets/mona-sans.woff2') format('woff2-variations');
-        font-weight: 200 900;
-        font-stretch: 75% 125%;
-        font-display: swap;
-      }
-
       html { overflow-x: hidden; width: 100%; }
-      body { margin: 0; padding: 0; overflow-x: hidden; -webkit-text-size-adjust: 100%; width: 100%; }
+      body { margin: 0; padding: 0; overflow-x: hidden; -webkit-text-size-adjust: 100%; width: 100%;
+             font-family: 'DM Sans', system-ui, sans-serif; }
+      h1, h2, h3, .font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
+      strong { font-weight: 700; }
       #root { width: 100%; }
       *, *::before, *::after { box-sizing: border-box; }
       img, video, iframe, svg { max-width: 100%; height: auto; }
@@ -5917,9 +5949,9 @@ function StyleInjector() {
 
       @keyframes searchFocusRing {
         0%   { border-color: #EA4C89; box-shadow: 0 0 0 3px rgba(234,76,137,0.18); }
-        25%  { border-color: #525AFF; box-shadow: 0 0 0 3px rgba(82,90,255,0.18); }
+        25%  { border-color: #3F7D58; box-shadow: 0 0 0 3px rgba(63,125,88,0.18); }
         50%  { border-color: #0EA5E9; box-shadow: 0 0 0 3px rgba(14,165,233,0.18); }
-        75%  { border-color: #10B981; box-shadow: 0 0 0 3px rgba(16,185,129,0.18); }
+        75%  { border-color: #7FB069; box-shadow: 0 0 0 3px rgba(127,176,105,0.18); }
         100% { border-color: #EA4C89; box-shadow: 0 0 0 3px rgba(234,76,137,0.18); }
       }
       .h-search-focus {
@@ -5930,7 +5962,7 @@ function StyleInjector() {
       .mega-link { display: block; width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 6px 10px; border-radius: 8px; font-size: 13.5px; color: #374151; font-weight: 500; transition: background 0.15s, color 0.15s; }
       .mega-link:hover { background: #f0fdf4; color: #166534; }
       .mega-sub-link { display: block; width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 3px 10px; border-radius: 6px; font-size: 12.5px; color: #6B7280; font-weight: 500; transition: background 0.15s, color 0.15s; }
-      .mega-sub-link:hover { background: #F0FAFF; color: #525AFF; }
+      .mega-sub-link:hover { background: #EEF5EB; color: #3F7D58; }
       .nav-learning-wrap { position: relative; }
 
       .popup-close:hover { background: #fee2e2 !important; color: #dc2626 !important; transform: scale(1.12); }
@@ -5961,10 +5993,18 @@ function StyleInjector() {
       .skill-card:hover { transform: translateX(4px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
       .lc-grade-row:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-1px); }
 
-      input:focus, button:focus-visible { outline: 3px solid #525AFF44; outline-offset: 2px; }
+      input:focus, button:focus-visible { outline: 3px solid rgba(63,125,88,0.35); outline-offset: 2px; }
       .h-search input:focus { outline: none; }
       button { font-family: inherit; }
       input, select, textarea { max-width: 100%; }
+
+      /* ── CARD & BUTTON MICRO-INTERACTIONS ── */
+      .action-card-hover { transition: transform 0.18s ease, box-shadow 0.18s ease; }
+      .action-card-hover:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(27,43,34,0.1) !important; }
+      .primary-action-hover { transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease; }
+      .primary-action-hover:hover { transform: translateY(-1px) scale(1.02); filter: brightness(1.06); box-shadow: 0 8px 22px rgba(63,125,88,0.38) !important; }
+      .catalog-card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
+      .catalog-card-hover:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(27,43,34,0.1) !important; border-color: #C5DDBB !important; }
 
       /* ── HEADER RESPONSIVE ── */
       .h-hamburger { display: flex !important; }
@@ -6187,7 +6227,7 @@ function StyleInjector() {
       .test-stack span {
         position: absolute; top: 8px; width: 58px; height: 76px;
         border-radius: 6px;
-        background: linear-gradient(160deg, #A78BFA, #525AFF);
+        background: linear-gradient(160deg, #7FB069, #3F7D58);
         color: white; display: flex; align-items: center; justify-content: center;
         font-weight: 900; box-shadow: 0 8px 14px rgba(0,0,0,0.15); border: 3px solid white;
       }
@@ -6209,8 +6249,8 @@ function StyleInjector() {
         font-size: 13px; font-weight: 800; color: #334155;
       }
       label input, label select, label textarea {
-        width: 100%; border: 2px solid #F0E6D6; border-radius: 10px;
-        padding: 11px 12px; font-family: ${FONT_BODY}; font-size: 14px; background: #F8FBFF;
+        width: 100%; border: 2px solid #C5DDBB; border-radius: 10px;
+        padding: 11px 12px; font-family: ${FONT_BODY}; font-size: 14px; background: #F6F4EE;
       }
       label textarea { min-height: 92px; resize: vertical; }
     `}</style>
@@ -6218,15 +6258,15 @@ function StyleInjector() {
 }
 
 // ---------- STYLES ----------
-const FONT_BODY    = '"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif';
-const FONT_DISPLAY = '"Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif';
+const FONT_BODY    = '"DM Sans", system-ui, sans-serif';
+const FONT_DISPLAY = '"Cormorant Garamond", Georgia, "Times New Roman", serif';
 
 const styles = {
   app: {
     minHeight: '100vh',
     width: '100%',
     fontFamily: FONT_BODY,
-    background: '#F5FBFF',
+    background: '#F6F4EE',
     color: '#1C1215',
     display: 'flex',
     flexDirection: 'column',
@@ -6240,17 +6280,17 @@ const styles = {
     alignItems: 'center',
     gap: 24,
     background: 'white',
-    border: '1px solid #F0E6D6',
+    border: '1px solid #C5DDBB',
     borderRadius: 16,
     padding: 24,
-    boxShadow: '0 12px 30px rgba(82,90,255,0.07)',
+    boxShadow: '0 12px 30px rgba(63,125,88,0.07)',
     flexWrap: 'wrap',
   },
   eyebrow: {
     fontSize: 12,
     fontWeight: 900,
     letterSpacing: 1.2,
-    color: '#525AFF',
+    color: '#3F7D58',
     textTransform: 'uppercase',
   },
   heroMiniPanel: {
@@ -6259,11 +6299,11 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     gap: 8,
-    background: '#F0FAFF',
-    border: '1px solid #B8E4FB',
+    background: '#EEF5EB',
+    border: '1px solid #C5DDBB',
     borderRadius: 14,
     padding: 16,
-    color: '#4C1D95',
+    color: '#3A5A33',
   },
   responsiveGrid: {
     display: 'grid',
@@ -6272,7 +6312,7 @@ const styles = {
   },
   actionCard: {
     background: 'white',
-    border: '1px solid #F0E6D6',
+    border: '1px solid #C5DDBB',
     borderRadius: 14,
     padding: 16,
     display: 'flex',
@@ -6280,7 +6320,7 @@ const styles = {
     gap: 14,
     cursor: 'pointer',
     textAlign: 'left',
-    boxShadow: '0 8px 18px rgba(82,90,255,0.06)',
+    boxShadow: '0 8px 18px rgba(63,125,88,0.06)',
   },
   actionIcon: {
     width: 44,
@@ -6305,7 +6345,7 @@ const styles = {
   },
   actionMeta: {
     fontSize: 12,
-    color: '#525AFF',
+    color: '#3F7D58',
     fontWeight: 800,
   },
   actionCta: {
@@ -6313,7 +6353,7 @@ const styles = {
     display: 'inline-flex',
     alignItems: 'center',
     gap: 4,
-    color: '#525AFF',
+    color: '#3F7D58',
     fontSize: 12,
     fontWeight: 900,
     whiteSpace: 'nowrap',
@@ -6322,7 +6362,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     gap: 12,
-    background: '#F0FAFF',
+    background: '#EEF5EB',
     borderRadius: 14,
     padding: 14,
     minWidth: 240,
@@ -6331,7 +6371,7 @@ const styles = {
     width: 48,
     height: 48,
     borderRadius: '50%',
-    background: '#525AFF',
+    background: '#3F7D58',
     color: 'white',
     display: 'flex',
     alignItems: 'center',
@@ -6340,10 +6380,10 @@ const styles = {
   },
   reportPanel: {
     background: 'white',
-    border: '1px solid #F0E6D6',
+    border: '1px solid #C5DDBB',
     borderRadius: 16,
     padding: 20,
-    boxShadow: '0 8px 22px rgba(82,90,255,0.06)',
+    boxShadow: '0 8px 22px rgba(63,125,88,0.06)',
   },
   reportHeader: {
     display: 'flex',
@@ -6378,7 +6418,7 @@ const styles = {
     marginTop: 24,
   },
   primaryAction: {
-    background: '#525AFF',
+    background: '#3F7D58',
     color: 'white',
     border: 'none',
     borderRadius: 10,
@@ -6390,12 +6430,13 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     gap: 8,
-    boxShadow: '0 4px 12px rgba(82,90,255,0.28)',
+    boxShadow: '0 4px 12px rgba(63,125,88,0.3)',
+    transition: 'transform 0.15s, box-shadow 0.15s',
   },
   secondaryAction: {
     background: 'white',
-    color: '#525AFF',
-    border: '2px solid #B8E4FB',
+    color: '#3F7D58',
+    border: '2px solid #C5DDBB',
     borderRadius: 10,
     padding: '10px 16px',
     fontSize: 14,
@@ -6408,10 +6449,10 @@ const styles = {
   },
   reportTable: {
     background: 'white',
-    border: '1px solid #F0E6D6',
+    border: '1px solid #C5DDBB',
     borderRadius: 16,
     overflow: 'hidden',
-    boxShadow: '0 8px 22px rgba(82,90,255,0.06)',
+    boxShadow: '0 8px 22px rgba(63,125,88,0.06)',
   },
   reportRow: {
     display: 'grid',
@@ -6424,8 +6465,8 @@ const styles = {
   },
   reportRowHead: {
     borderTop: 'none',
-    background: '#F0FAFF',
-    color: '#525AFF',
+    background: '#EEF5EB',
+    color: '#3F7D58',
     fontWeight: 900,
   },
   pricingGrid: {
@@ -6437,23 +6478,23 @@ const styles = {
   planCard: {
     position: 'relative',
     background: 'white',
-    border: '1px solid #F0E6D6',
+    border: '1px solid #C5DDBB',
     borderRadius: 18,
     padding: 24,
-    boxShadow: '0 8px 24px rgba(82,90,255,0.07)',
+    boxShadow: '0 8px 24px rgba(63,125,88,0.07)',
     display: 'flex',
     flexDirection: 'column',
     gap: 12,
   },
   planFeatured: {
-    border: '2px solid #525AFF',
+    border: '2px solid #3F7D58',
     transform: 'translateY(-4px)',
   },
   planBadge: {
     position: 'absolute',
     top: 14,
     right: 14,
-    background: '#D97706',
+    background: '#C4693A',
     color: 'white',
     borderRadius: 999,
     padding: '4px 10px',
@@ -6464,7 +6505,7 @@ const styles = {
     margin: 0,
     fontFamily: FONT_DISPLAY,
     fontSize: 28,
-    color: '#525AFF',
+    color: '#3F7D58',
   },
   planPrice: {
     fontSize: 42,
@@ -6483,7 +6524,7 @@ const styles = {
     gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
     gap: 14,
     background: 'white',
-    border: '1px solid #F0E6D6',
+    border: '1px solid #C5DDBB',
     borderRadius: 16,
     padding: 20,
   },
@@ -6492,7 +6533,7 @@ const styles = {
     gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
     gap: 14,
     background: 'white',
-    border: '1px solid #F0E6D6',
+    border: '1px solid #C5DDBB',
     borderRadius: 16,
     padding: 20,
   },
@@ -6509,12 +6550,12 @@ const styles = {
 
   // Header
   header: {
-    background: '#2D1B69',
+    background: '#1B2B22',
     borderBottom: 'none',
     position: 'sticky',
     top: 0,
     zIndex: 50,
-    boxShadow: '0 2px 16px rgba(45,27,105,0.45)',
+    boxShadow: '0 2px 20px rgba(27,43,34,0.55)',
   },
   headerInner: {
     maxWidth: 1120, margin: '0 auto', padding: '10px 20px 0',
@@ -6540,7 +6581,7 @@ const styles = {
     boxShadow: '0 2px 8px rgba(0,0,0,0.28)',
   },
   logoCapSection: {
-    background: '#1E0F4A',
+    background: '#111C17',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     padding: '0 9px',
     fontSize: 18,
@@ -6548,10 +6589,10 @@ const styles = {
     flexShrink: 0,
   },
   logoWordmark: {
-    background: 'linear-gradient(135deg, #3B1F5E 0%, #525AFF 100%)',
+    background: 'linear-gradient(135deg, #1B2B22 0%, #3F7D58 100%)',
     display: 'flex', alignItems: 'center',
     padding: '0 14px 0 9px',
-    color: '#E0F4FF',
+    color: '#FFEEDD',
     fontWeight: 900, fontSize: 17,
     fontFamily: FONT_DISPLAY,
     letterSpacing: '-0.01em',
@@ -6559,10 +6600,10 @@ const styles = {
   },
   logoIcon: {
     width: 40, height: 40, borderRadius: 12,
-    background: 'linear-gradient(135deg, #525AFF 0%, #8FD9FB 100%)',
+    background: 'linear-gradient(135deg, #3F7D58 0%, #7FB069 100%)',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     color: 'white',
-    boxShadow: '0 4px 12px rgba(82,90,255,0.4)',
+    boxShadow: '0 4px 12px rgba(63,125,88,0.4)',
   },
   logoText: { fontFamily: FONT_BODY, fontSize: 14, fontWeight: 800, color: 'white', lineHeight: 1 },
   logoTag: { fontSize: 11, color: '#6B7280', marginTop: 2, fontWeight: 500 },
@@ -6615,7 +6656,7 @@ const styles = {
   searchIcon: {
     width: 38,
     height: 36,
-    background: '#525AFF',
+    background: '#3F7D58',
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -6669,12 +6710,12 @@ const styles = {
   },
   topRoleBtnActive: {
     background: 'white',
-    color: '#525AFF',
+    color: '#3F7D58',
     borderColor: 'white',
   },
   iconBtn: {
     width: 34, height: 34, borderRadius: 5,
-    background: '#525AFF', border: '1px solid rgba(255,255,255,0.5)', cursor: 'pointer',
+    background: '#3F7D58', border: '1px solid rgba(255,255,255,0.5)', cursor: 'pointer',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     color: 'white', transition: 'all 0.15s',
   },
@@ -6697,7 +6738,7 @@ const styles = {
   },
   mobileMenu: {
     display: 'flex', flexDirection: 'column',
-    background: '#1E0F4A',
+    background: '#111C17',
     borderTop: '1px solid rgba(255,255,255,0.15)',
     paddingBottom: 8,
   },
@@ -6721,7 +6762,7 @@ const styles = {
     padding: '0 18px',
     border: 'none',
     borderRadius: 6,
-    background: '#D97706',
+    background: '#C4693A',
     color: 'white',
     display: 'inline-flex',
     alignItems: 'center',
@@ -6730,7 +6771,7 @@ const styles = {
     fontWeight: 700,
     cursor: 'pointer',
     letterSpacing: 0.1,
-    boxShadow: '0 2px 8px rgba(217,119,6,0.35)',
+    boxShadow: '0 2px 8px rgba(196,105,58,0.35)',
   },
   membershipBtn: {
     height: 36,
@@ -6751,7 +6792,7 @@ const styles = {
   },
   avatar: {
     width: 20, height: 20, borderRadius: '50%',
-    background: '#D97706',
+    background: '#C4693A',
     color: 'white', fontWeight: 700, fontSize: 13,
     display: 'flex', alignItems: 'center', justifyContent: 'center',
   },
@@ -6761,7 +6802,7 @@ const styles = {
     minHeight: '100vh',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     padding: 24, position: 'relative', overflow: 'hidden',
-    background: 'linear-gradient(135deg, #F0FAFF 0%, #E0F4FF 45%, #FFF7ED 100%)',
+    background: 'linear-gradient(135deg, #EEF5EB 0%, #D8EDD1 45%, #F6F4EE 100%)',
   },
   loginBg: { position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0 },
   loginCard: {
@@ -6773,10 +6814,10 @@ const styles = {
   loginHero: { textAlign: 'center' },
   loginLogo: {
     width: 72, height: 72, margin: '0 auto', borderRadius: 20,
-    background: 'linear-gradient(135deg, #525AFF 0%, #8FD9FB 100%)',
+    background: 'linear-gradient(135deg, #3F7D58 0%, #7FB069 100%)',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     color: 'white',
-    boxShadow: '0 8px 24px rgba(82,90,255,0.4)',
+    boxShadow: '0 8px 24px rgba(63,125,88,0.4)',
   },
   loginTitle: {
     fontFamily: FONT_DISPLAY, fontSize: 42, fontWeight: 900,
@@ -6787,7 +6828,7 @@ const styles = {
   input: {
     width: '100%', padding: '14px 16px', borderRadius: 12,
     border: '2px solid #E5E7EB', fontSize: 16, fontFamily: FONT_BODY,
-    transition: 'border-color 0.15s', background: '#FAFBFF',
+    transition: 'border-color 0.15s', background: '#F6F4EE',
   },
   roleGrid: { display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8, marginBottom: 8 },
   roleBtn: {
@@ -6797,12 +6838,12 @@ const styles = {
   },
   primaryBtn: {
     width: '100%', marginTop: 24, padding: '14px 20px',
-    background: 'linear-gradient(135deg, #525AFF 0%, #8FD9FB 100%)',
+    background: 'linear-gradient(135deg, #3F7D58 0%, #7FB069 100%)',
     color: 'white', border: 'none', borderRadius: 14,
     fontSize: 16, fontWeight: 700, cursor: 'pointer',
     display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-    boxShadow: '0 8px 20px rgba(82,90,255,0.38)',
-    transition: 'transform 0.1s',
+    boxShadow: '0 8px 20px rgba(63,125,88,0.38)',
+    transition: 'transform 0.12s, box-shadow 0.12s',
   },
   loginNote: { fontSize: 12, color: '#9CA3AF', textAlign: 'center', marginTop: 16 },
 
@@ -6815,8 +6856,8 @@ const styles = {
   heroBadge: {
     display: 'inline-flex', alignItems: 'center', gap: 6,
     padding: '6px 12px', borderRadius: 999,
-    background: 'linear-gradient(135deg, #E0F4FF 0%, #FDE8BB 100%)',
-    fontSize: 12, fontWeight: 700, color: '#3A41CC',
+    background: 'linear-gradient(135deg, #E8F2E4 0%, #C5DDBB 100%)',
+    fontSize: 12, fontWeight: 700, color: '#3A5A33',
     marginBottom: 16,
   },
   heroTitle: {
@@ -6825,13 +6866,13 @@ const styles = {
     margin: 0, color: '#1F2937',
   },
   heroName: {
-    background: 'linear-gradient(135deg, #525AFF 0%, #EC4899 100%)',
+    background: 'linear-gradient(135deg, #3F7D58 0%, #EC4899 100%)',
     WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
     backgroundClip: 'text',
   },
   heroEmphasis: {
     fontStyle: 'italic',
-    color: '#525AFF',
+    color: '#3F7D58',
   },
   heroDesc: { fontSize: 17, color: '#4B5563', marginTop: 16, lineHeight: 1.6, maxWidth: 540 },
   heroStats: { display: 'flex', gap: 12, marginTop: 28, flexWrap: 'wrap' },
@@ -6847,7 +6888,7 @@ const styles = {
   redesignHero: {
     position: 'relative',
     minHeight: 398,
-    background: 'linear-gradient(180deg, #FFF7ED 0%, #FECBA1 48%, #FCA572 68%, #F97316 80%, #525AFF 85%, #4C1D95 100%)',
+    background: 'linear-gradient(180deg, #F6F4EE 0%, #EEF5EB 48%, #C5DDBB 68%, #7FB069 80%, #1B3526 88%, #1B2B22 100%)',
     overflow: 'hidden',
     borderBottom: 'none',
   },
@@ -6858,8 +6899,8 @@ const styles = {
     width: '38%',
     height: 120,
     opacity: 1,
-    background: 'linear-gradient(120deg, transparent 0 22%, #FECBA1 22% 30%, transparent 30%), linear-gradient(90deg, #FDE8BB 0 22%, transparent 22% 28%, #FDE8BB 28% 50%, transparent 50% 56%, #FDE8BB 56% 78%, transparent 78%)',
-    borderBottom: '12px solid #525AFF',
+    background: 'linear-gradient(120deg, transparent 0 22%, #7FB069 22% 30%, transparent 30%), linear-gradient(90deg, #C5DDBB 0 22%, transparent 22% 28%, #C5DDBB 28% 50%, transparent 50% 56%, #C5DDBB 56% 78%, transparent 78%)',
+    borderBottom: '12px solid #1B3526',
   },
   heroHills: {
     position: 'absolute',
@@ -6867,7 +6908,7 @@ const styles = {
     right: -90,
     bottom: -54,
     height: 150,
-    background: 'radial-gradient(ellipse at 20% 68%, #4C1D95 0 28%, transparent 29%), radial-gradient(ellipse at 66% 74%, #3A41CC 0 31%, transparent 32%), radial-gradient(ellipse at 94% 66%, #525AFF 0 28%, transparent 29%)',
+    background: 'radial-gradient(ellipse at 20% 68%, #1A2E20 0 28%, transparent 29%), radial-gradient(ellipse at 66% 74%, #1B3526 0 31%, transparent 32%), radial-gradient(ellipse at 94% 66%, #1B3526 0 28%, transparent 29%)',
   },
   heroBalloon: {
     position: 'absolute',
@@ -6876,9 +6917,9 @@ const styles = {
     width: 88,
     height: 136,
     borderRadius: '50% 50% 45% 45%',
-    background: 'radial-gradient(circle at 30% 30%, #FEF3C7 0 10%, transparent 11%), repeating-linear-gradient(90deg, #FCA5A5 0 15px, #F97316 15px 18px)',
-    border: '2px solid #F97316',
-    boxShadow: '0 100px 0 -36px #525AFF',
+    background: 'radial-gradient(circle at 30% 30%, #FEF3C7 0 10%, transparent 11%), repeating-linear-gradient(90deg, #FCA5A5 0 15px, #7FB069 15px 18px)',
+    border: '2px solid #7FB069',
+    boxShadow: '0 100px 0 -36px #1B3526',
   },
   heroSun: {
     position: 'absolute',
@@ -6887,7 +6928,7 @@ const styles = {
     width: 70,
     height: 70,
     borderRadius: '50%',
-    background: 'radial-gradient(circle, #FFFDE7 0 30%, #FDE68A 31% 62%, rgba(253,230,138,0.25) 63%)',
+    background: 'radial-gradient(circle, #FFFDE7 0 30%, #C5DDBB 31% 62%, rgba(253,230,138,0.25) 63%)',
     boxShadow: '0 0 0 12px rgba(251,191,36,0.22)',
   },
   heroRocket: {
@@ -6923,7 +6964,7 @@ const styles = {
   },
   heroKicker: {
     margin: '0 0 26px',
-    color: '#3A41CC',
+    color: '#1A2E20',
     fontSize: 42,
     fontFamily: FONT_DISPLAY,
     fontWeight: 500,
@@ -6954,11 +6995,11 @@ const styles = {
   heroGreeting: {
     margin: '10px 0 12px',
     fontSize: 13,
-    color: '#3A41CC',
+    color: '#3A5A33',
     fontWeight: 700,
   },
   heroCta: {
-    background: '#525AFF',
+    background: '#3F7D58',
     color: 'white',
     border: 'none',
     borderRadius: 4,
@@ -6966,11 +7007,11 @@ const styles = {
     fontSize: 16,
     fontWeight: 800,
     cursor: 'pointer',
-    boxShadow: '0 3px 0 #4C1D95',
+    boxShadow: '0 3px 0 #2A5C3E',
   },
   ixlHero: {
     position: 'relative',
-    background: 'linear-gradient(180deg, #F5FBFF 0%, #FEF3C7 35%, #FDE8BB 70%, #FCD34D 100%)',
+    background: 'linear-gradient(180deg, #F6F4EE 0%, #EEF5EB 35%, #C5DDBB 70%, #7FB069 100%)',
     overflow: 'hidden',
     padding: '48px 220px 110px',
     minHeight: 360,
@@ -6998,7 +7039,7 @@ const styles = {
     fontFamily: FONT_DISPLAY,
     fontSize: 46,
     fontWeight: 400,
-    color: '#4C1D95',
+    color: '#1A2E20',
     textAlign: 'center',
     margin: '0 0 28px',
     letterSpacing: '-0.01em',
@@ -7006,7 +7047,7 @@ const styles = {
   ixlHeroIs: {
     fontWeight: 900,
     fontStyle: 'italic',
-    color: '#525AFF',
+    color: '#3F7D58',
   },
   ixlCloudsRow: {
     display: 'flex',
@@ -7040,7 +7081,7 @@ const styles = {
     lineHeight: 1.6,
   },
   ixlMemberBtn: {
-    background: '#525AFF',
+    background: '#3F7D58',
     color: 'white',
     border: 'none',
     borderRadius: 4,
@@ -7048,7 +7089,7 @@ const styles = {
     fontSize: 16,
     fontWeight: 700,
     cursor: 'pointer',
-    boxShadow: '0 3px 0 #4C1D95',
+    boxShadow: '0 3px 0 #2A5C3E',
     position: 'relative',
     zIndex: 4,
   },
@@ -7079,12 +7120,12 @@ const styles = {
     left: '-25%',
     right: '-25%',
     height: 58,
-    background: '#D97706',
+    background: '#C4693A',
     borderRadius: '45% 45% 0 0',
     zIndex: 3,
   },
   homePromoBand: {
-    background: '#FFF7ED',
+    background: '#F6F4EE',
     borderBottom: 'none',
     padding: '30px 16px',
   },
@@ -7113,7 +7154,7 @@ const styles = {
     width: 52,
     height: 52,
     borderRadius: '50%',
-    background: '#D97706',
+    background: '#C4693A',
     color: 'white',
     display: 'flex',
     alignItems: 'center',
@@ -7127,7 +7168,7 @@ const styles = {
     flexShrink: 0,
   },
   gradeCatalogSection: {
-    background: '#F5FBFF',
+    background: '#F6F4EE',
     padding: '0 16px 38px',
   },
   gradeCatalogGrid: {
@@ -7168,7 +7209,7 @@ const styles = {
     marginLeft: -24,
   },
   catalogTitle: {
-    color: '#525AFF',
+    color: '#3F7D58',
     fontSize: 30,
     fontFamily: FONT_DISPLAY,
     fontWeight: 500,
@@ -7202,18 +7243,18 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    color: '#525AFF',
+    color: '#3F7D58',
     fontSize: 12,
     fontWeight: 800,
   },
   skillsBand: {
-    background: '#FFF7ED',
+    background: '#F6F4EE',
     padding: '36px 16px',
     textAlign: 'center',
   },
   bandTitle: {
     margin: 0,
-    color: '#D97706',
+    color: '#C4693A',
     fontFamily: FONT_DISPLAY,
     fontSize: 28,
     fontWeight: 800,
@@ -7221,7 +7262,7 @@ const styles = {
   bandSub: {
     margin: '6px auto 20px',
     maxWidth: 620,
-    color: '#92400E',
+    color: '#3A5A33',
     fontSize: 13,
   },
   skillCarousel: {
@@ -7240,7 +7281,7 @@ const styles = {
     border: '1px solid #E8C5A0',
     borderRadius: 4,
     padding: 8,
-    boxShadow: '0 5px 10px rgba(217,119,6,0.10)',
+    boxShadow: '0 5px 10px rgba(196,105,58,0.10)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -7258,7 +7299,7 @@ const styles = {
     justifyContent: 'center',
   },
   greenCta: {
-    background: '#525AFF',
+    background: '#3F7D58',
     color: 'white',
     border: 'none',
     borderRadius: 3,
@@ -7268,7 +7309,7 @@ const styles = {
     cursor: 'pointer',
   },
   supportBand: {
-    background: 'linear-gradient(180deg, #2D1B69 0%, #1E0F4A 100%)',
+    background: 'linear-gradient(180deg, #1B2B22 0%, #111C17 100%)',
     padding: '32px 16px 38px',
     textAlign: 'center',
     color: 'white',
@@ -7297,7 +7338,7 @@ const styles = {
     color: '#374151',
     minHeight: 190,
     padding: '20px 16px',
-    border: '1px solid #B8E4FB',
+    border: '1px solid #C5DDBB',
   },
   supportIcon: {
     width: 42,
@@ -7311,7 +7352,7 @@ const styles = {
   },
   supportCta: {
     marginTop: 18,
-    background: '#525AFF',
+    background: '#3F7D58',
     color: 'white',
     border: 'none',
     borderRadius: 3,
@@ -7321,7 +7362,7 @@ const styles = {
     cursor: 'pointer',
   },
   impactBand: {
-    background: 'linear-gradient(180deg, #525AFF 0%, #3A41CC 100%)',
+    background: 'linear-gradient(180deg, #1B2B22 0%, #1B3526 100%)',
     padding: '28px 16px 42px',
     textAlign: 'center',
     color: 'white',
@@ -7351,15 +7392,15 @@ const styles = {
     width: 66,
     height: 66,
     borderRadius: '50%',
-    background: 'linear-gradient(135deg, #FDE68A, #FCA5A5)',
+    background: 'linear-gradient(135deg, #C5DDBB, #7FB069)',
     border: '3px solid white',
-    color: '#525AFF',
+    color: '#3F7D58',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
   },
   impactButton: {
-    background: '#D97706',
+    background: '#C4693A',
     color: 'white',
     border: '1px solid rgba(255,255,255,0.5)',
     borderRadius: 2,
@@ -7401,8 +7442,8 @@ const styles = {
   },
   dashCTA: {
     marginTop: 12, padding: '10px 14px', borderRadius: 10,
-    background: 'linear-gradient(135deg, #E0F4FF, #F0FAFF)',
-    color: '#525AFF', fontWeight: 700, fontSize: 13,
+    background: 'linear-gradient(135deg, #E8F2E4, #EEF5EB)',
+    color: '#3F7D58', fontWeight: 700, fontSize: 13,
     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
   },
 
@@ -7422,7 +7463,7 @@ const styles = {
   gradeCard: {
     position: 'relative', overflow: 'hidden',
     background: 'white', borderRadius: 18, padding: 20,
-    border: '1px solid #F0E6D6', cursor: 'pointer', textAlign: 'left',
+    border: '1px solid #C5DDBB', cursor: 'pointer', textAlign: 'left',
     transition: 'transform 0.2s, box-shadow 0.2s',
     minHeight: 140,
   },
@@ -7523,14 +7564,14 @@ const styles = {
   },
   grade8Tab: {
     padding: '11px 18px',
-    color: '#525AFF',
+    color: '#3F7D58',
     fontSize: 14,
     whiteSpace: 'nowrap',
   },
   grade8TabActive: {
     padding: '11px 24px',
     color: 'white',
-    background: '#525AFF',
+    background: '#3F7D58',
     fontSize: 14,
     fontWeight: 800,
     clipPath: 'polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%)',
@@ -7634,7 +7675,7 @@ const styles = {
     fontSize: 12,
   },
   grade8Mastery: {
-    color: '#525AFF',
+    color: '#3F7D58',
     fontSize: 11,
     whiteSpace: 'nowrap',
   },
@@ -7642,7 +7683,7 @@ const styles = {
   skillList: { display: 'flex', flexDirection: 'column', gap: 12 },
   skillCard: {
     background: 'white', borderRadius: 16, padding: 20,
-    border: '1px solid #F0E6D6', cursor: 'pointer',
+    border: '1px solid #C5DDBB', cursor: 'pointer',
     display: 'flex', alignItems: 'center', gap: 20,
     transition: 'transform 0.15s, box-shadow 0.15s',
   },
@@ -7674,8 +7715,8 @@ const styles = {
   skillIntro: {
     background: 'white', borderRadius: 24, padding: '48px 32px',
     textAlign: 'center', maxWidth: 720, margin: '24px auto 0',
-    boxShadow: '0 12px 32px rgba(82,90,255,0.06)',
-    border: '1px solid #F0E6D6',
+    boxShadow: '0 12px 32px rgba(63,125,88,0.06)',
+    border: '1px solid #C5DDBB',
   },
   skillIntroIcon: {
     width: 72, height: 72, borderRadius: 20, margin: '0 auto',
@@ -7689,9 +7730,9 @@ const styles = {
   skillIntroDesc: { fontSize: 16, color: '#6B7280', margin: '0 auto', maxWidth: 480 },
   explainBox: {
     marginTop: 32, padding: 20, borderRadius: 14,
-    background: '#FFFBEB', border: '1px solid #FDE68A', textAlign: 'left',
+    background: '#EEF5EB', border: '1px solid #C5DDBB', textAlign: 'left',
   },
-  explainHead: { display: 'flex', alignItems: 'center', gap: 8, color: '#92400E', marginBottom: 8 },
+  explainHead: { display: 'flex', alignItems: 'center', gap: 8, color: '#3A5A33', marginBottom: 8 },
   explainText: { margin: 0, fontSize: 15, color: '#374151', lineHeight: 1.6 },
   skillMetaRow: {
     display: 'flex', justifyContent: 'center', gap: 24, marginTop: 24, flexWrap: 'wrap',
@@ -7716,8 +7757,8 @@ const styles = {
 
   questionCard: {
     background: 'white', borderRadius: 20, padding: 32,
-    border: '1px solid #F0E6D6',
-    boxShadow: '0 8px 24px rgba(82,90,255,0.05)',
+    border: '1px solid #C5DDBB',
+    boxShadow: '0 8px 24px rgba(63,125,88,0.05)',
     animation: 'slideUp 0.3s ease',
   },
   questionMeta: { display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 },
@@ -7747,9 +7788,9 @@ const styles = {
 
   hintBox: {
     marginTop: 16, padding: '12px 16px', borderRadius: 10,
-    background: '#FFFBEB', border: '1px solid #FDE68A',
+    background: '#EEF5EB', border: '1px solid #C5DDBB',
     display: 'flex', alignItems: 'center', gap: 10,
-    fontSize: 14, color: '#92400E', fontWeight: 500,
+    fontSize: 14, color: '#3A5A33', fontWeight: 500,
   },
 
   feedback: {
@@ -7769,8 +7810,8 @@ const styles = {
     marginTop: 24, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap',
   },
   hintBtn: {
-    padding: '10px 16px', borderRadius: 10, border: '2px solid #FDE68A',
-    background: '#FFFBEB', color: '#92400E', fontWeight: 700, fontSize: 14,
+    padding: '10px 16px', borderRadius: 10, border: '2px solid #C5DDBB',
+    background: '#EEF5EB', color: '#3A5A33', fontWeight: 700, fontSize: 14,
     cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6,
   },
 
@@ -7778,8 +7819,8 @@ const styles = {
   resultWrap: {
     maxWidth: 600, margin: '40px auto 0',
     background: 'white', borderRadius: 24, padding: 48,
-    textAlign: 'center', border: '1px solid #F0E6D6',
-    boxShadow: '0 12px 32px rgba(82,90,255,0.08)',
+    textAlign: 'center', border: '1px solid #C5DDBB',
+    boxShadow: '0 12px 32px rgba(63,125,88,0.08)',
     animation: 'pop 0.5s ease',
   },
   resultEmoji: { fontSize: 80 },
@@ -7813,7 +7854,7 @@ const styles = {
   bigStat: {
     display: 'flex', alignItems: 'center', gap: 14,
     background: 'white', padding: 18, borderRadius: 16,
-    border: '1px solid #F0E6D6',
+    border: '1px solid #C5DDBB',
   },
   bigStatIcon: {
     width: 48, height: 48, borderRadius: 12,
@@ -7827,7 +7868,7 @@ const styles = {
   },
   subjectAnalyticCard: {
     background: 'white', padding: 20, borderRadius: 16,
-    border: '1px solid #F0E6D6',
+    border: '1px solid #C5DDBB',
   },
   analyticHead: { display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 },
   analyticIcon: {
@@ -7843,7 +7884,7 @@ const styles = {
   recList: { display: 'flex', flexDirection: 'column', gap: 10 },
   recCard: {
     background: 'white', padding: 18, borderRadius: 14,
-    border: '1px solid #F0E6D6', cursor: 'pointer',
+    border: '1px solid #C5DDBB', cursor: 'pointer',
     display: 'flex', alignItems: 'center', gap: 16,
     transition: 'all 0.15s',
   },
@@ -7852,7 +7893,7 @@ const styles = {
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     flexShrink: 0,
   },
-  recReason: { fontSize: 11, fontWeight: 700, color: '#525AFF', textTransform: 'uppercase', letterSpacing: 0.5 },
+  recReason: { fontSize: 11, fontWeight: 700, color: '#3F7D58', textTransform: 'uppercase', letterSpacing: 0.5 },
   recTitle: { fontFamily: FONT_DISPLAY, fontSize: 17, fontWeight: 800, color: '#1F2937', marginTop: 2 },
   recMeta: { fontSize: 12, color: '#6B7280', marginTop: 4 },
 
@@ -7861,7 +7902,7 @@ const styles = {
   },
   recentCard: {
     background: 'white', padding: 18, borderRadius: 14,
-    border: '1px solid #F0E6D6', cursor: 'pointer', textAlign: 'left',
+    border: '1px solid #C5DDBB', cursor: 'pointer', textAlign: 'left',
     transition: 'all 0.15s',
   },
   recentIcon: {
@@ -7877,9 +7918,9 @@ const styles = {
   // Badges
   badgesHero: {
     display: 'flex', alignItems: 'center', gap: 20,
-    background: 'linear-gradient(135deg, #FFF7ED 0%, #E0F4FF 100%)',
+    background: 'linear-gradient(135deg, #F6F4EE 0%, #E0F4FF 100%)',
     padding: 32, borderRadius: 24, marginTop: 16, marginBottom: 32,
-    border: '2px solid #FDE8BB',
+    border: '2px solid #C5DDBB',
   },
   badgeGrid: {
     display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 16,
@@ -7894,7 +7935,7 @@ const styles = {
   badgeEarned: {
     marginTop: 12, display: 'inline-flex', alignItems: 'center', gap: 4,
     padding: '4px 10px', borderRadius: 999,
-    background: '#525AFF', color: 'white', fontSize: 11, fontWeight: 700,
+    background: '#3F7D58', color: 'white', fontSize: 11, fontWeight: 700,
   },
   badgeLocked: {
     marginTop: 12, display: 'inline-flex', alignItems: 'center', gap: 4,
@@ -7945,7 +7986,7 @@ const styles = {
   // Sign In page
   siHero: {
     position: 'relative',
-    background: 'linear-gradient(180deg, #F0FAFF 0%, #E0F4FF 55%, #525AFF 100%)',
+    background: 'linear-gradient(180deg, #EEF5EB 0%, #D8EDD1 55%, #1B2B22 100%)',
     minHeight: 320,
     display: 'flex',
     alignItems: 'center',
@@ -7972,7 +8013,7 @@ const styles = {
   },
   siCardTitle: {
     textAlign: 'center',
-    color: '#525AFF',
+    color: '#3F7D58',
     fontFamily: FONT_DISPLAY,
     fontSize: 26,
     fontWeight: 700,
@@ -8015,7 +8056,7 @@ const styles = {
     margin: '18px 0 0',
   },
   siBtn: {
-    background: '#525AFF',
+    background: '#3F7D58',
     color: 'white',
     border: 'none',
     borderRadius: 4,
@@ -8023,7 +8064,7 @@ const styles = {
     fontSize: 15,
     fontWeight: 700,
     cursor: 'pointer',
-    boxShadow: '0 2px 0 #4C1D95',
+    boxShadow: '0 2px 0 #2A5C3E',
   },
   siRemember: {
     display: 'flex',
@@ -8050,7 +8091,7 @@ const styles = {
     left: '-10%',
     right: '-10%',
     height: 56,
-    background: '#4C1D95',
+    background: '#1B2B22',
     borderRadius: '60% 60% 0 0',
   },
   siMemberSection: {
@@ -8059,7 +8100,7 @@ const styles = {
     textAlign: 'center',
   },
   siNotMemberTitle: {
-    color: '#525AFF',
+    color: '#3F7D58',
     fontFamily: FONT_DISPLAY,
     fontSize: 30,
     fontWeight: 700,
@@ -8109,7 +8150,7 @@ const styles = {
     margin: '0 0 22px',
   },
   siJoinBtn: {
-    background: '#525AFF',
+    background: '#3F7D58',
     color: 'white',
     border: 'none',
     borderRadius: 4,
@@ -8117,7 +8158,7 @@ const styles = {
     fontSize: 16,
     fontWeight: 700,
     cursor: 'pointer',
-    boxShadow: '0 2px 0 #3A41CC',
+    boxShadow: '0 2px 0 #2A5C3E',
   },
   siFooter: {
     background: '#F9FAFB',
@@ -8224,9 +8265,9 @@ const styles = {
   },
   testimonialLink: {
     background: 'transparent',
-    border: '1.5px solid #525AFF',
+    border: '1.5px solid #3F7D58',
     borderRadius: 4,
-    color: '#525AFF',
+    color: '#3F7D58',
     fontSize: 13,
     fontWeight: 700,
     padding: '7px 18px',
@@ -8269,7 +8310,7 @@ const styles = {
     maxWidth: 180,
   },
   footerJoinBtn: {
-    background: '#525AFF',
+    background: '#3F7D58',
     color: 'white',
     border: 'none',
     borderRadius: 4,
@@ -8565,7 +8606,7 @@ const styles = {
   },
 
   footer: {
-    background: '#0F1A2B',
+    background: '#111C17',
     borderTop: 'none',
   },
 };
